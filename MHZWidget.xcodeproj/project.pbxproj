@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		23084BC8224872FD00DE329D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23084BC7224872FD00DE329D /* AppDelegate.swift */; };
-		23084BCA224872FD00DE329D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23084BC9224872FD00DE329D /* ViewController.swift */; };
-		23084BCD224872FD00DE329D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23084BCB224872FD00DE329D /* Main.storyboard */; };
+		23084BCA224872FD00DE329D /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23084BC9224872FD00DE329D /* RootViewController.swift */; };
 		23084BCF2248730000DE329D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23084BCE2248730000DE329D /* Assets.xcassets */; };
 		23084BD22248730000DE329D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23084BD02248730000DE329D /* LaunchScreen.storyboard */; };
+		2309C90922967B82002762FB /* CommonTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309C90422967B82002762FB /* CommonTVCell.swift */; };
+		2309C90A22967B82002762FB /* CoFirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309C90622967B82002762FB /* CoFirstVC.swift */; };
+		2309C90B22967B82002762FB /* MHZNavigaitonC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309C90822967B82002762FB /* MHZNavigaitonC.swift */; };
+		C8ADB505BFD8AB3B8C124ECF /* libPods-MHZWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 694BCF1EC9BE0AC66BB8B8C0 /* libPods-MHZWidget.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		23084BC4224872FD00DE329D /* MHZWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHZWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23084BC7224872FD00DE329D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		23084BC9224872FD00DE329D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		23084BCC224872FD00DE329D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		23084BC9224872FD00DE329D /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		23084BCE2248730000DE329D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23084BD12248730000DE329D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23084BD32248730000DE329D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2309C90422967B82002762FB /* CommonTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTVCell.swift; sourceTree = "<group>"; };
+		2309C90622967B82002762FB /* CoFirstVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoFirstVC.swift; sourceTree = "<group>"; };
+		2309C90822967B82002762FB /* MHZNavigaitonC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHZNavigaitonC.swift; sourceTree = "<group>"; };
+		694BCF1EC9BE0AC66BB8B8C0 /* libPods-MHZWidget.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MHZWidget.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93248C00F51A5B81A8C7B7AE /* Pods-MHZWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHZWidget.debug.xcconfig"; path = "Target Support Files/Pods-MHZWidget/Pods-MHZWidget.debug.xcconfig"; sourceTree = "<group>"; };
+		F8B6D3D95AA845E1D666AF79 /* Pods-MHZWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHZWidget.release.xcconfig"; path = "Target Support Files/Pods-MHZWidget/Pods-MHZWidget.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8ADB505BFD8AB3B8C124ECF /* libPods-MHZWidget.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				23084BC6224872FD00DE329D /* MHZWidget */,
 				23084BC5224872FD00DE329D /* Products */,
+				978229CE6AE080A68C03D5F0 /* Pods */,
+				B640F71C0E51CF65930D9561 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +65,66 @@
 		23084BC6224872FD00DE329D /* MHZWidget */ = {
 			isa = PBXGroup;
 			children = (
+				2309C90222967B82002762FB /* Widgets */,
 				23084BC7224872FD00DE329D /* AppDelegate.swift */,
-				23084BC9224872FD00DE329D /* ViewController.swift */,
-				23084BCB224872FD00DE329D /* Main.storyboard */,
+				23084BC9224872FD00DE329D /* RootViewController.swift */,
 				23084BCE2248730000DE329D /* Assets.xcassets */,
 				23084BD02248730000DE329D /* LaunchScreen.storyboard */,
 				23084BD32248730000DE329D /* Info.plist */,
 			);
 			path = MHZWidget;
+			sourceTree = "<group>";
+		};
+		2309C90222967B82002762FB /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				2309C90322967B82002762FB /* commonCell */,
+				2309C90522967B82002762FB /* commonVC */,
+				2309C90722967B82002762FB /* navigation */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		2309C90322967B82002762FB /* commonCell */ = {
+			isa = PBXGroup;
+			children = (
+				2309C90422967B82002762FB /* CommonTVCell.swift */,
+			);
+			path = commonCell;
+			sourceTree = "<group>";
+		};
+		2309C90522967B82002762FB /* commonVC */ = {
+			isa = PBXGroup;
+			children = (
+				2309C90622967B82002762FB /* CoFirstVC.swift */,
+			);
+			path = commonVC;
+			sourceTree = "<group>";
+		};
+		2309C90722967B82002762FB /* navigation */ = {
+			isa = PBXGroup;
+			children = (
+				2309C90822967B82002762FB /* MHZNavigaitonC.swift */,
+			);
+			path = navigation;
+			sourceTree = "<group>";
+		};
+		978229CE6AE080A68C03D5F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93248C00F51A5B81A8C7B7AE /* Pods-MHZWidget.debug.xcconfig */,
+				F8B6D3D95AA845E1D666AF79 /* Pods-MHZWidget.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B640F71C0E51CF65930D9561 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				694BCF1EC9BE0AC66BB8B8C0 /* libPods-MHZWidget.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,6 +134,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23084BD62248730000DE329D /* Build configuration list for PBXNativeTarget "MHZWidget" */;
 			buildPhases = (
+				9FC049FE652BBBE21122B8F4 /* [CP] Check Pods Manifest.lock */,
 				23084BC0224872FD00DE329D /* Sources */,
 				23084BC1224872FD00DE329D /* Frameworks */,
 				23084BC2224872FD00DE329D /* Resources */,
@@ -124,33 +188,52 @@
 			files = (
 				23084BD22248730000DE329D /* LaunchScreen.storyboard in Resources */,
 				23084BCF2248730000DE329D /* Assets.xcassets in Resources */,
-				23084BCD224872FD00DE329D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9FC049FE652BBBE21122B8F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MHZWidget-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		23084BC0224872FD00DE329D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23084BCA224872FD00DE329D /* ViewController.swift in Sources */,
+				2309C90B22967B82002762FB /* MHZNavigaitonC.swift in Sources */,
+				23084BCA224872FD00DE329D /* RootViewController.swift in Sources */,
+				2309C90A22967B82002762FB /* CoFirstVC.swift in Sources */,
 				23084BC8224872FD00DE329D /* AppDelegate.swift in Sources */,
+				2309C90922967B82002762FB /* CommonTVCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		23084BCB224872FD00DE329D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				23084BCC224872FD00DE329D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		23084BD02248730000DE329D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -280,10 +363,12 @@
 		};
 		23084BD72248730000DE329D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93248C00F51A5B81A8C7B7AE /* Pods-MHZWidget.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MHZWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -291,16 +376,18 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hachizhineng.MHZWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		23084BD82248730000DE329D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8B6D3D95AA845E1D666AF79 /* Pods-MHZWidget.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MHZWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +395,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hachizhineng.MHZWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
