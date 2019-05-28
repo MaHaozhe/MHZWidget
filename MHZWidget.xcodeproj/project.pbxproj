@@ -14,6 +14,8 @@
 		2309C90922967B82002762FB /* CommonTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309C90422967B82002762FB /* CommonTVCell.swift */; };
 		2309C90A22967B82002762FB /* CoFirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309C90622967B82002762FB /* CoFirstVC.swift */; };
 		2309C90B22967B82002762FB /* MHZNavigaitonC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309C90822967B82002762FB /* MHZNavigaitonC.swift */; };
+		2309C90E22968A64002762FB /* CommonTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309C90D22968A64002762FB /* CommonTabBarVC.swift */; };
+		2309C91022968DCC002762FB /* RootMyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309C90F22968DCC002762FB /* RootMyVC.swift */; };
 		C8ADB505BFD8AB3B8C124ECF /* libPods-MHZWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 694BCF1EC9BE0AC66BB8B8C0 /* libPods-MHZWidget.a */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,8 @@
 		2309C90422967B82002762FB /* CommonTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTVCell.swift; sourceTree = "<group>"; };
 		2309C90622967B82002762FB /* CoFirstVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoFirstVC.swift; sourceTree = "<group>"; };
 		2309C90822967B82002762FB /* MHZNavigaitonC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHZNavigaitonC.swift; sourceTree = "<group>"; };
+		2309C90D22968A64002762FB /* CommonTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTabBarVC.swift; sourceTree = "<group>"; };
+		2309C90F22968DCC002762FB /* RootMyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootMyVC.swift; sourceTree = "<group>"; };
 		694BCF1EC9BE0AC66BB8B8C0 /* libPods-MHZWidget.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MHZWidget.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93248C00F51A5B81A8C7B7AE /* Pods-MHZWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHZWidget.debug.xcconfig"; path = "Target Support Files/Pods-MHZWidget/Pods-MHZWidget.debug.xcconfig"; sourceTree = "<group>"; };
 		F8B6D3D95AA845E1D666AF79 /* Pods-MHZWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHZWidget.release.xcconfig"; path = "Target Support Files/Pods-MHZWidget/Pods-MHZWidget.release.xcconfig"; sourceTree = "<group>"; };
@@ -68,6 +72,7 @@
 				2309C90222967B82002762FB /* Widgets */,
 				23084BC7224872FD00DE329D /* AppDelegate.swift */,
 				23084BC9224872FD00DE329D /* RootViewController.swift */,
+				2309C90F22968DCC002762FB /* RootMyVC.swift */,
 				23084BCE2248730000DE329D /* Assets.xcassets */,
 				23084BD02248730000DE329D /* LaunchScreen.storyboard */,
 				23084BD32248730000DE329D /* Info.plist */,
@@ -78,6 +83,7 @@
 		2309C90222967B82002762FB /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
+				2309C90C22968A19002762FB /* tabbar */,
 				2309C90322967B82002762FB /* commonCell */,
 				2309C90522967B82002762FB /* commonVC */,
 				2309C90722967B82002762FB /* navigation */,
@@ -109,13 +115,20 @@
 			path = navigation;
 			sourceTree = "<group>";
 		};
+		2309C90C22968A19002762FB /* tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				2309C90D22968A64002762FB /* CommonTabBarVC.swift */,
+			);
+			path = tabbar;
+			sourceTree = "<group>";
+		};
 		978229CE6AE080A68C03D5F0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				93248C00F51A5B81A8C7B7AE /* Pods-MHZWidget.debug.xcconfig */,
 				F8B6D3D95AA845E1D666AF79 /* Pods-MHZWidget.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -223,9 +236,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2309C91022968DCC002762FB /* RootMyVC.swift in Sources */,
 				2309C90B22967B82002762FB /* MHZNavigaitonC.swift in Sources */,
 				23084BCA224872FD00DE329D /* RootViewController.swift in Sources */,
 				2309C90A22967B82002762FB /* CoFirstVC.swift in Sources */,
+				2309C90E22968A64002762FB /* CommonTabBarVC.swift in Sources */,
 				23084BC8224872FD00DE329D /* AppDelegate.swift in Sources */,
 				2309C90922967B82002762FB /* CommonTVCell.swift in Sources */,
 			);

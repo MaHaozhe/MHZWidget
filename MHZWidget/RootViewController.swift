@@ -39,6 +39,8 @@ class RootViewController: UIViewController {
     
 }
 
+
+//MARK: 表视图代理方法
 extension RootViewController : UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
@@ -48,6 +50,8 @@ extension RootViewController : UITableViewDelegate{
     }
 }
 
+
+//MARK: 表视图数据源代理方法
 extension RootViewController : UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10;
