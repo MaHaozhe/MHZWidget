@@ -16,6 +16,9 @@
 		2309C90B22967B82002762FB /* MHZNavigaitonC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309C90822967B82002762FB /* MHZNavigaitonC.swift */; };
 		2309C90E22968A64002762FB /* CommonTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309C90D22968A64002762FB /* CommonTabBarVC.swift */; };
 		2309C91022968DCC002762FB /* RootMyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309C90F22968DCC002762FB /* RootMyVC.swift */; };
+		23EB63A2229E351200EE1BAA /* MHZTouchTBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EB63A1229E351200EE1BAA /* MHZTouchTBVC.swift */; };
+		23EB63A4229E36E000EE1BAA /* MHZTouchTBVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EB63A3229E36E000EE1BAA /* MHZTouchTBVCell.swift */; };
+		23EB63A6229E7C6000EE1BAA /* MHZTouchDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EB63A5229E7C6000EE1BAA /* MHZTouchDetailVC.swift */; };
 		C8ADB505BFD8AB3B8C124ECF /* libPods-MHZWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 694BCF1EC9BE0AC66BB8B8C0 /* libPods-MHZWidget.a */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +34,9 @@
 		2309C90822967B82002762FB /* MHZNavigaitonC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHZNavigaitonC.swift; sourceTree = "<group>"; };
 		2309C90D22968A64002762FB /* CommonTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTabBarVC.swift; sourceTree = "<group>"; };
 		2309C90F22968DCC002762FB /* RootMyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootMyVC.swift; sourceTree = "<group>"; };
+		23EB63A1229E351200EE1BAA /* MHZTouchTBVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZTouchTBVC.swift; sourceTree = "<group>"; };
+		23EB63A3229E36E000EE1BAA /* MHZTouchTBVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZTouchTBVCell.swift; sourceTree = "<group>"; };
+		23EB63A5229E7C6000EE1BAA /* MHZTouchDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZTouchDetailVC.swift; sourceTree = "<group>"; };
 		694BCF1EC9BE0AC66BB8B8C0 /* libPods-MHZWidget.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MHZWidget.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93248C00F51A5B81A8C7B7AE /* Pods-MHZWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHZWidget.debug.xcconfig"; path = "Target Support Files/Pods-MHZWidget/Pods-MHZWidget.debug.xcconfig"; sourceTree = "<group>"; };
 		F8B6D3D95AA845E1D666AF79 /* Pods-MHZWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHZWidget.release.xcconfig"; path = "Target Support Files/Pods-MHZWidget/Pods-MHZWidget.release.xcconfig"; sourceTree = "<group>"; };
@@ -83,6 +89,7 @@
 		2309C90222967B82002762FB /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
+				23EB639D229E34B400EE1BAA /* 3DTouchTBV */,
 				2309C90C22968A19002762FB /* tabbar */,
 				2309C90322967B82002762FB /* commonCell */,
 				2309C90522967B82002762FB /* commonVC */,
@@ -121,6 +128,40 @@
 				2309C90D22968A64002762FB /* CommonTabBarVC.swift */,
 			);
 			path = tabbar;
+			sourceTree = "<group>";
+		};
+		23EB639D229E34B400EE1BAA /* 3DTouchTBV */ = {
+			isa = PBXGroup;
+			children = (
+				23EB639E229E34D900EE1BAA /* Controller */,
+				23EB639F229E34D900EE1BAA /* Model */,
+				23EB63A0229E34D900EE1BAA /* View */,
+			);
+			path = 3DTouchTBV;
+			sourceTree = "<group>";
+		};
+		23EB639E229E34D900EE1BAA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				23EB63A1229E351200EE1BAA /* MHZTouchTBVC.swift */,
+				23EB63A5229E7C6000EE1BAA /* MHZTouchDetailVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		23EB639F229E34D900EE1BAA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		23EB63A0229E34D900EE1BAA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				23EB63A3229E36E000EE1BAA /* MHZTouchTBVCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		978229CE6AE080A68C03D5F0 /* Pods */ = {
@@ -239,9 +280,12 @@
 				2309C91022968DCC002762FB /* RootMyVC.swift in Sources */,
 				2309C90B22967B82002762FB /* MHZNavigaitonC.swift in Sources */,
 				23084BCA224872FD00DE329D /* RootViewController.swift in Sources */,
+				23EB63A6229E7C6000EE1BAA /* MHZTouchDetailVC.swift in Sources */,
 				2309C90A22967B82002762FB /* CoFirstVC.swift in Sources */,
+				23EB63A4229E36E000EE1BAA /* MHZTouchTBVCell.swift in Sources */,
 				2309C90E22968A64002762FB /* CommonTabBarVC.swift in Sources */,
 				23084BC8224872FD00DE329D /* AppDelegate.swift in Sources */,
+				23EB63A2229E351200EE1BAA /* MHZTouchTBVC.swift in Sources */,
 				2309C90922967B82002762FB /* CommonTVCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,8 +426,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94KPU2F73G;
 				INFOPLIST_FILE = MHZWidget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -401,8 +446,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94KPU2F73G;
 				INFOPLIST_FILE = MHZWidget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

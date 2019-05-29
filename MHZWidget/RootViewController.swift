@@ -46,7 +46,12 @@ extension RootViewController : UITableViewDelegate{
         tableView.deselectRow(at: indexPath, animated: true)
         let cell = tableView.cellForRow(at: indexPath)
         let returnVC = CoFirstVC(vcTitle: cell?.textLabel?.text ?? "无标题")
-        self.navigationController?.pushViewController(returnVC, animated: true)
+        
+        if indexPath.row == 0 {
+            self.navigationController?.pushViewController(MHZTouchTBVC(), animated: true)
+        }else{
+            self.navigationController?.pushViewController(returnVC, animated: true)
+        }
     }
 }
 
@@ -61,7 +66,15 @@ extension RootViewController : UITableViewDataSource{
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "CommonTVCell", for: indexPath)
         
-        cell.textLabel?.text = String.init(format: "commonCell %d", indexPath.row+1)
+        switch indexPath.row {
+        case 0:
+            do {
+                cell.textLabel?.text = "3D Touch"
+            }
+        default:
+            cell.textLabel?.text = String.init(format: "commonCell %d", indexPath.row+1)
+        }
+        
         
         return cell
     }
