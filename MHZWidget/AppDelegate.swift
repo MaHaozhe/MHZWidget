@@ -13,6 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    var shortcutItemToProcess: UIApplicationShortcutItem?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
@@ -23,12 +24,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = CommonTabBarVC()
         self.window?.makeKeyAndVisible()
         
+        if let shortcutItem = launchOptions?[UIApplication.LaunchOptionsKey.shortcutItem] as? UIApplicationShortcutItem {
+                shortcutItemToProcess = shortcutItem
+            }
+        
+        
         return true
+    }
+    
+    //MARK: 添加3D Touch items
+    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+        
+        shortcutItemToProcess = shortcutItem
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+        // 快速访问的按钮只能添加4个，包含代码添加的和配置文件配置的
+        application.shortcutItems = [UIApplicationShortcutItem(type: "FavoriteAction", localizedTitle: "喜欢", localizedSubtitle: "最喜欢的事情", icon: UIApplicationShortcutIcon(type: .love), userInfo: ["name":"MHZ" as NSSecureCoding]),UIApplicationShortcutItem(type: "discoverAction", localizedTitle: "发现", localizedSubtitle: "发现身边事", icon: UIApplicationShortcutIcon(templateImageName: "tabbar_discover"), userInfo: ["name":"MHZ" as NSSecureCoding])]
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
@@ -42,6 +57,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        switch shortcutItemToProcess?.type {
+        case "FavoriteAction":
+            print("喜欢")
+        case "SearchAction":
+            print("分享")
+        case "contactAction":
+            print("联系人")
+        case "discoverAction":
+            print("发现")
+        default:
+            break
+            
+        }
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
