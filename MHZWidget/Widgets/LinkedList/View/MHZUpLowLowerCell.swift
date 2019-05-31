@@ -22,7 +22,7 @@ class MHZUpLowLowerCell: UICollectionViewCell {
     
     func setupSubviews() {
         let view = UIView.init()
-        view.backgroundColor = UIColor.red
+        
         self .addSubview(view)
         
         view.snp.makeConstraints { (make) in

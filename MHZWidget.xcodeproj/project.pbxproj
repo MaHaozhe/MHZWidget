@@ -24,6 +24,7 @@
 		23EB63A6229E7C6000EE1BAA /* MHZTouchDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EB63A5229E7C6000EE1BAA /* MHZTouchDetailVC.swift */; };
 		23FA3BBF22A0CA9B008C2BB8 /* MHZUpLowLowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA3BBE22A0CA9B008C2BB8 /* MHZUpLowLowerCell.swift */; };
 		23FA3BC222A0CE40008C2BB8 /* MHZViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA3BC122A0CE40008C2BB8 /* MHZViewExtensions.swift */; };
+		23FA3BC422A126C4008C2BB8 /* MHZUIDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA3BC322A126C4008C2BB8 /* MHZUIDefine.swift */; };
 		C8ADB505BFD8AB3B8C124ECF /* libPods-MHZWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 694BCF1EC9BE0AC66BB8B8C0 /* libPods-MHZWidget.a */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		23EB63A5229E7C6000EE1BAA /* MHZTouchDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZTouchDetailVC.swift; sourceTree = "<group>"; };
 		23FA3BBE22A0CA9B008C2BB8 /* MHZUpLowLowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZUpLowLowerCell.swift; sourceTree = "<group>"; };
 		23FA3BC122A0CE40008C2BB8 /* MHZViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZViewExtensions.swift; sourceTree = "<group>"; };
+		23FA3BC322A126C4008C2BB8 /* MHZUIDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZUIDefine.swift; sourceTree = "<group>"; };
 		694BCF1EC9BE0AC66BB8B8C0 /* libPods-MHZWidget.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MHZWidget.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93248C00F51A5B81A8C7B7AE /* Pods-MHZWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHZWidget.debug.xcconfig"; path = "Target Support Files/Pods-MHZWidget/Pods-MHZWidget.debug.xcconfig"; sourceTree = "<group>"; };
 		F8B6D3D95AA845E1D666AF79 /* Pods-MHZWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHZWidget.release.xcconfig"; path = "Target Support Files/Pods-MHZWidget/Pods-MHZWidget.release.xcconfig"; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				23FA3BC122A0CE40008C2BB8 /* MHZViewExtensions.swift */,
+				23FA3BC322A126C4008C2BB8 /* MHZUIDefine.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				23FA3BC222A0CE40008C2BB8 /* MHZViewExtensions.swift in Sources */,
 				2309C90B22967B82002762FB /* MHZNavigaitonC.swift in Sources */,
 				23084BCA224872FD00DE329D /* RootViewController.swift in Sources */,
+				23FA3BC422A126C4008C2BB8 /* MHZUIDefine.swift in Sources */,
 				23FA3BBF22A0CA9B008C2BB8 /* MHZUpLowLowerCell.swift in Sources */,
 				23EB63A6229E7C6000EE1BAA /* MHZTouchDetailVC.swift in Sources */,
 				23BA6800229FD26E009AEBA2 /* MHZUpLowLinkView.swift in Sources */,
@@ -480,7 +484,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 94KPU2F73G;
 				INFOPLIST_FILE = MHZWidget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -500,7 +504,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 94KPU2F73G;
 				INFOPLIST_FILE = MHZWidget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

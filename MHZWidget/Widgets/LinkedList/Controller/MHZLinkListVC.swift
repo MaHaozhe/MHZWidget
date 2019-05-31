@@ -20,7 +20,7 @@ class MHZLinkListVC: UIViewController {
         //防止view显示在导航下边
         self.edgesForExtendedLayout = []
         
-        let linkView = MHZUpLowLinkView.init(titleArr: ["hha","qqqq"], contentArr: ["123","4312"])
+        let linkView = MHZUpLowLinkView.init(titleArr: ["hha","qqqq"], contentArr: ["123","4312"],viewSize: CGSize.init(width: self.view.width, height: self.view.height-(self.navigationController?.navigationBar.height)!-20 ))
         
         self.view.addSubview(linkView)
         
