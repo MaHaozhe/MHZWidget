@@ -47,11 +47,15 @@ extension RootViewController : UITableViewDelegate{
         let cell = tableView.cellForRow(at: indexPath)
         let returnVC = CoFirstVC(vcTitle: cell?.textLabel?.text ?? "无标题")
         
-        if indexPath.row == 0 {
+        switch indexPath.row {
+        case 0:
             self.navigationController?.pushViewController(MHZTouchTBVC(), animated: true)
-        }else{
+        case 1:
+            self.navigationController?.pushViewController(MHZLinkListVC(), animated: true)
+        default:
             self.navigationController?.pushViewController(returnVC, animated: true)
         }
+        
     }
 }
 
@@ -68,9 +72,9 @@ extension RootViewController : UITableViewDataSource{
         
         switch indexPath.row {
         case 0:
-            do {
-                cell.textLabel?.text = "3D Touch"
-            }
+            cell.textLabel?.text = "3D Touch"
+        case 1:
+            cell.textLabel?.text = "Link List"
         default:
             cell.textLabel?.text = String.init(format: "commonCell %d", indexPath.row+1)
         }

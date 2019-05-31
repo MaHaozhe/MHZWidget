@@ -16,9 +16,14 @@
 		2309C90B22967B82002762FB /* MHZNavigaitonC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309C90822967B82002762FB /* MHZNavigaitonC.swift */; };
 		2309C90E22968A64002762FB /* CommonTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309C90D22968A64002762FB /* CommonTabBarVC.swift */; };
 		2309C91022968DCC002762FB /* RootMyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309C90F22968DCC002762FB /* RootMyVC.swift */; };
+		23BA67FE229FAA79009AEBA2 /* MHZLinkListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BA67FD229FAA79009AEBA2 /* MHZLinkListVC.swift */; };
+		23BA6800229FD26E009AEBA2 /* MHZUpLowLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BA67FF229FD26E009AEBA2 /* MHZUpLowLinkView.swift */; };
+		23BA6802229FE372009AEBA2 /* MHZUpLowUpperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BA6801229FE372009AEBA2 /* MHZUpLowUpperCell.swift */; };
 		23EB63A2229E351200EE1BAA /* MHZTouchTBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EB63A1229E351200EE1BAA /* MHZTouchTBVC.swift */; };
 		23EB63A4229E36E000EE1BAA /* MHZTouchTBVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EB63A3229E36E000EE1BAA /* MHZTouchTBVCell.swift */; };
 		23EB63A6229E7C6000EE1BAA /* MHZTouchDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EB63A5229E7C6000EE1BAA /* MHZTouchDetailVC.swift */; };
+		23FA3BBF22A0CA9B008C2BB8 /* MHZUpLowLowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA3BBE22A0CA9B008C2BB8 /* MHZUpLowLowerCell.swift */; };
+		23FA3BC222A0CE40008C2BB8 /* MHZViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA3BC122A0CE40008C2BB8 /* MHZViewExtensions.swift */; };
 		C8ADB505BFD8AB3B8C124ECF /* libPods-MHZWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 694BCF1EC9BE0AC66BB8B8C0 /* libPods-MHZWidget.a */; };
 /* End PBXBuildFile section */
 
@@ -34,9 +39,14 @@
 		2309C90822967B82002762FB /* MHZNavigaitonC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHZNavigaitonC.swift; sourceTree = "<group>"; };
 		2309C90D22968A64002762FB /* CommonTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTabBarVC.swift; sourceTree = "<group>"; };
 		2309C90F22968DCC002762FB /* RootMyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootMyVC.swift; sourceTree = "<group>"; };
+		23BA67FD229FAA79009AEBA2 /* MHZLinkListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZLinkListVC.swift; sourceTree = "<group>"; };
+		23BA67FF229FD26E009AEBA2 /* MHZUpLowLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZUpLowLinkView.swift; sourceTree = "<group>"; };
+		23BA6801229FE372009AEBA2 /* MHZUpLowUpperCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZUpLowUpperCell.swift; sourceTree = "<group>"; };
 		23EB63A1229E351200EE1BAA /* MHZTouchTBVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZTouchTBVC.swift; sourceTree = "<group>"; };
 		23EB63A3229E36E000EE1BAA /* MHZTouchTBVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZTouchTBVCell.swift; sourceTree = "<group>"; };
 		23EB63A5229E7C6000EE1BAA /* MHZTouchDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZTouchDetailVC.swift; sourceTree = "<group>"; };
+		23FA3BBE22A0CA9B008C2BB8 /* MHZUpLowLowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZUpLowLowerCell.swift; sourceTree = "<group>"; };
+		23FA3BC122A0CE40008C2BB8 /* MHZViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZViewExtensions.swift; sourceTree = "<group>"; };
 		694BCF1EC9BE0AC66BB8B8C0 /* libPods-MHZWidget.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MHZWidget.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93248C00F51A5B81A8C7B7AE /* Pods-MHZWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHZWidget.debug.xcconfig"; path = "Target Support Files/Pods-MHZWidget/Pods-MHZWidget.debug.xcconfig"; sourceTree = "<group>"; };
 		F8B6D3D95AA845E1D666AF79 /* Pods-MHZWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHZWidget.release.xcconfig"; path = "Target Support Files/Pods-MHZWidget/Pods-MHZWidget.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +99,8 @@
 		2309C90222967B82002762FB /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
+				23FA3BC022A0CD71008C2BB8 /* Tools */,
+				23BA67FA229FAA3A009AEBA2 /* LinkedList */,
 				23EB639D229E34B400EE1BAA /* 3DTouchTBV */,
 				2309C90C22968A19002762FB /* tabbar */,
 				2309C90322967B82002762FB /* commonCell */,
@@ -130,6 +142,33 @@
 			path = tabbar;
 			sourceTree = "<group>";
 		};
+		23BA67FA229FAA3A009AEBA2 /* LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				23BA67FC229FAA53009AEBA2 /* View */,
+				23BA67FB229FAA4B009AEBA2 /* Controller */,
+			);
+			path = LinkedList;
+			sourceTree = "<group>";
+		};
+		23BA67FB229FAA4B009AEBA2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				23BA67FD229FAA79009AEBA2 /* MHZLinkListVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		23BA67FC229FAA53009AEBA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				23BA67FF229FD26E009AEBA2 /* MHZUpLowLinkView.swift */,
+				23BA6801229FE372009AEBA2 /* MHZUpLowUpperCell.swift */,
+				23FA3BBE22A0CA9B008C2BB8 /* MHZUpLowLowerCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		23EB639D229E34B400EE1BAA /* 3DTouchTBV */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +201,14 @@
 				23EB63A3229E36E000EE1BAA /* MHZTouchTBVCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		23FA3BC022A0CD71008C2BB8 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				23FA3BC122A0CE40008C2BB8 /* MHZViewExtensions.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		978229CE6AE080A68C03D5F0 /* Pods */ = {
@@ -278,13 +325,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				2309C91022968DCC002762FB /* RootMyVC.swift in Sources */,
+				23FA3BC222A0CE40008C2BB8 /* MHZViewExtensions.swift in Sources */,
 				2309C90B22967B82002762FB /* MHZNavigaitonC.swift in Sources */,
 				23084BCA224872FD00DE329D /* RootViewController.swift in Sources */,
+				23FA3BBF22A0CA9B008C2BB8 /* MHZUpLowLowerCell.swift in Sources */,
 				23EB63A6229E7C6000EE1BAA /* MHZTouchDetailVC.swift in Sources */,
+				23BA6800229FD26E009AEBA2 /* MHZUpLowLinkView.swift in Sources */,
 				2309C90A22967B82002762FB /* CoFirstVC.swift in Sources */,
 				23EB63A4229E36E000EE1BAA /* MHZTouchTBVCell.swift in Sources */,
 				2309C90E22968A64002762FB /* CommonTabBarVC.swift in Sources */,
 				23084BC8224872FD00DE329D /* AppDelegate.swift in Sources */,
+				23BA67FE229FAA79009AEBA2 /* MHZLinkListVC.swift in Sources */,
+				23BA6802229FE372009AEBA2 /* MHZUpLowUpperCell.swift in Sources */,
 				23EB63A2229E351200EE1BAA /* MHZTouchTBVC.swift in Sources */,
 				2309C90922967B82002762FB /* CommonTVCell.swift in Sources */,
 			);

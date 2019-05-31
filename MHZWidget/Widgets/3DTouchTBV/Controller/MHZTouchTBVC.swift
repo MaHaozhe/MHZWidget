@@ -94,6 +94,13 @@ extension MHZTouchTBVC : UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        let cell = tableView.cellForRow(at: indexPath)
+        
+        let color = cell?.backgroundColor
+        
+        let viewController = MHZTouchDetailVC.init(bgColor: color!)
+        
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
     
 }
