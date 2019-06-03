@@ -38,7 +38,10 @@ class MHZUpLowLowerContentView: UIView {
         self.tableView.snp.makeConstraints { (make) -> Void in
             make.left.right.top.bottom.equalTo(self)
         }
-        
+    }
+    
+    open func setTableViewBounces(canBounces : Bool) {
+        self.tableView.bounces = canBounces
     }
         
     

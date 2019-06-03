@@ -17,6 +17,8 @@
 		2309C90E22968A64002762FB /* CommonTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309C90D22968A64002762FB /* CommonTabBarVC.swift */; };
 		2309C91022968DCC002762FB /* RootMyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309C90F22968DCC002762FB /* RootMyVC.swift */; };
 		2343AA2B22A5063A00E056F5 /* MHZUpLowLowerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2343AA2A22A5063A00E056F5 /* MHZUpLowLowerContentView.swift */; };
+		2343AA2E22A5117E00E056F5 /* MHZTitleSubTitleLInkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2343AA2D22A5117E00E056F5 /* MHZTitleSubTitleLInkView.swift */; };
+		2343AA3022A51CEC00E056F5 /* MHZTitleSubTitleLInkViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2343AA2F22A51CEC00E056F5 /* MHZTitleSubTitleLInkViewSection.swift */; };
 		23BA67FE229FAA79009AEBA2 /* MHZLinkListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BA67FD229FAA79009AEBA2 /* MHZLinkListVC.swift */; };
 		23BA6800229FD26E009AEBA2 /* MHZUpLowLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BA67FF229FD26E009AEBA2 /* MHZUpLowLinkView.swift */; };
 		23BA6802229FE372009AEBA2 /* MHZUpLowUpperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BA6801229FE372009AEBA2 /* MHZUpLowUpperCell.swift */; };
@@ -42,6 +44,8 @@
 		2309C90D22968A64002762FB /* CommonTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTabBarVC.swift; sourceTree = "<group>"; };
 		2309C90F22968DCC002762FB /* RootMyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootMyVC.swift; sourceTree = "<group>"; };
 		2343AA2A22A5063A00E056F5 /* MHZUpLowLowerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZUpLowLowerContentView.swift; sourceTree = "<group>"; };
+		2343AA2D22A5117E00E056F5 /* MHZTitleSubTitleLInkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZTitleSubTitleLInkView.swift; sourceTree = "<group>"; };
+		2343AA2F22A51CEC00E056F5 /* MHZTitleSubTitleLInkViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZTitleSubTitleLInkViewSection.swift; sourceTree = "<group>"; };
 		23BA67FD229FAA79009AEBA2 /* MHZLinkListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZLinkListVC.swift; sourceTree = "<group>"; };
 		23BA67FF229FD26E009AEBA2 /* MHZUpLowLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZUpLowLinkView.swift; sourceTree = "<group>"; };
 		23BA6801229FE372009AEBA2 /* MHZUpLowUpperCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZUpLowUpperCell.swift; sourceTree = "<group>"; };
@@ -146,9 +150,19 @@
 			path = tabbar;
 			sourceTree = "<group>";
 		};
+		2343AA2C22A5112800E056F5 /* MainSubTitleView */ = {
+			isa = PBXGroup;
+			children = (
+				2343AA2D22A5117E00E056F5 /* MHZTitleSubTitleLInkView.swift */,
+				2343AA2F22A51CEC00E056F5 /* MHZTitleSubTitleLInkViewSection.swift */,
+			);
+			path = MainSubTitleView;
+			sourceTree = "<group>";
+		};
 		23BA67FA229FAA3A009AEBA2 /* LinkedList */ = {
 			isa = PBXGroup;
 			children = (
+				2343AA2C22A5112800E056F5 /* MainSubTitleView */,
 				23BA67FC229FAA53009AEBA2 /* UpLowView */,
 				23BA67FB229FAA4B009AEBA2 /* Controller */,
 			);
@@ -339,6 +353,7 @@
 				23EB63A6229E7C6000EE1BAA /* MHZTouchDetailVC.swift in Sources */,
 				2343AA2B22A5063A00E056F5 /* MHZUpLowLowerContentView.swift in Sources */,
 				23BA6800229FD26E009AEBA2 /* MHZUpLowLinkView.swift in Sources */,
+				2343AA3022A51CEC00E056F5 /* MHZTitleSubTitleLInkViewSection.swift in Sources */,
 				2309C90A22967B82002762FB /* CoFirstVC.swift in Sources */,
 				23EB63A4229E36E000EE1BAA /* MHZTouchTBVCell.swift in Sources */,
 				2309C90E22968A64002762FB /* CommonTabBarVC.swift in Sources */,
@@ -347,6 +362,7 @@
 				23BA6802229FE372009AEBA2 /* MHZUpLowUpperCell.swift in Sources */,
 				23EB63A2229E351200EE1BAA /* MHZTouchTBVC.swift in Sources */,
 				2309C90922967B82002762FB /* CommonTVCell.swift in Sources */,
+				2343AA2E22A5117E00E056F5 /* MHZTitleSubTitleLInkView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

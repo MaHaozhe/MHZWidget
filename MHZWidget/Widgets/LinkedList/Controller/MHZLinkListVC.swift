@@ -20,7 +20,10 @@ class MHZLinkListVC: UIViewController {
         //防止view显示在导航下边
         self.edgesForExtendedLayout = []
         
-        let linkView = MHZUpLowLinkView.init(titleArr: ["第一页","第二页","第三页","第四页","第五页","第六页","第七页","第八页","第九页","第十页"], contentArr: [MHZUpLowLowerContentView.init(titleString: "第一页"),MHZUpLowLowerContentView.init(titleString: "第二页"),MHZUpLowLowerContentView.init(titleString: "第三页"),MHZUpLowLowerContentView.init(titleString: "第四页"),MHZUpLowLowerContentView.init(titleString: "第五页"),MHZUpLowLowerContentView.init(titleString: "第六页"),MHZUpLowLowerContentView.init(titleString: "第七页"),MHZUpLowLowerContentView.init(titleString: "第八页"),MHZUpLowLowerContentView.init(titleString: "第九页"),MHZUpLowLowerContentView.init(titleString: "第十页")],viewSize: CGSize.init(width: self.view.width, height: self.view.height-(self.navigationController?.navigationBar.height)!-20 ))
+        let firstVC = MHZUpLowLowerContentView.init(titleString: "第一页")
+        firstVC.setTableViewBounces(canBounces: false)
+        
+        let linkView = MHZUpLowLinkView.init(titleArr: ["第一页","第二页","第三页","第四页","第五页","第六页","第七页","第八页","第九页","第十页"], contentArr: [firstVC,MHZUpLowLowerContentView.init(titleString: "第二页"),MHZUpLowLowerContentView.init(titleString: "第三页"),MHZUpLowLowerContentView.init(titleString: "第四页"),MHZUpLowLowerContentView.init(titleString: "第五页"),MHZUpLowLowerContentView.init(titleString: "第六页"),MHZUpLowLowerContentView.init(titleString: "第七页"),MHZUpLowLowerContentView.init(titleString: "第八页"),MHZUpLowLowerContentView.init(titleString: "第九页"),MHZUpLowLowerContentView.init(titleString: "第十页")],viewSize: CGSize.init(width: self.view.width, height: self.view.height-(self.navigationController?.navigationBar.height)!-20 ))
         
         self.view.addSubview(linkView)
         
