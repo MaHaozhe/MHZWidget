@@ -4,7 +4,7 @@
 //
 //  Created by MaHaoZhe on 2019/5/30.
 //  Copyright © 2019 HachiTech. All rights reserved.
-//
+//  title-content 上下滑动联动
 
 import UIKit
 
@@ -20,9 +20,9 @@ class MHZUpLowLinkView: UIView,UIScrollViewDelegate {
     
     
     var titleView : UICollectionView!//上半部分
-    var contentView : UICollectionView!//下半部分
+    var contentView : UICollectionView!//下半部分d
     var titleArray : Array<Any>!//上半部分数据
-    var contentArray : Array<Any>!//下半部分数据
+    var contentArray : Array<Any>!//下半部分UI
     var indexView : UIView!//上半部分标记选中的item
     
     

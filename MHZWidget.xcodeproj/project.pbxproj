@@ -149,7 +149,7 @@
 		23BA67FA229FAA3A009AEBA2 /* LinkedList */ = {
 			isa = PBXGroup;
 			children = (
-				23BA67FC229FAA53009AEBA2 /* View */,
+				23BA67FC229FAA53009AEBA2 /* UpLowView */,
 				23BA67FB229FAA4B009AEBA2 /* Controller */,
 			);
 			path = LinkedList;
@@ -163,7 +163,7 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		23BA67FC229FAA53009AEBA2 /* View */ = {
+		23BA67FC229FAA53009AEBA2 /* UpLowView */ = {
 			isa = PBXGroup;
 			children = (
 				23BA67FF229FD26E009AEBA2 /* MHZUpLowLinkView.swift */,
@@ -171,7 +171,7 @@
 				23FA3BBE22A0CA9B008C2BB8 /* MHZUpLowLowerCell.swift */,
 				2343AA2A22A5063A00E056F5 /* MHZUpLowLowerContentView.swift */,
 			);
-			path = View;
+			path = UpLowView;
 			sourceTree = "<group>";
 		};
 		23EB639D229E34B400EE1BAA /* 3DTouchTBV */ = {
