@@ -14,6 +14,10 @@ class MHZUpLowLinkView: UIView,UIScrollViewDelegate {
     var MHZUPPERVIEWWIDTH : CGFloat = 90//上半部分item宽度
     var MHZUPLOWVIEWMARGIN : CGFloat = 5//上部分和下部分的间距
     var linkViewSize : CGSize!//linkview 在superview中的大小
+    var upperItemNumber : NSInteger!//根据一屏有几个按钮，来确定当滑块滑到哪里再移动upperview
+    var indexViewWidth : CGFloat = 60//标记试图的宽度
+    var moveWithAnimat : Bool!
+    
     
     var titleView : UICollectionView!//上半部分
     var contentView : UICollectionView!//下半部分
@@ -58,6 +62,8 @@ class MHZUpLowLinkView: UIView,UIScrollViewDelegate {
         titleView.delegate = self
         titleView.dataSource = self
         titleView.register(MHZUpLowUpperCell.self, forCellWithReuseIdentifier: MHZUpLowLinkView.MHZUpLowUpperCellID)
+        titleView.bounces = false
+        titleView.showsHorizontalScrollIndicator = false
         self.addSubview(titleView)
         
         titleView.snp.makeConstraints { (make) in
@@ -66,9 +72,9 @@ class MHZUpLowLinkView: UIView,UIScrollViewDelegate {
         }
         
         
-        indexView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: MHZUPPERVIEWWIDTH, height: MHZUPPERVIEWHEIGHT))
+        indexView = UIView.init(frame: CGRect.init(x: (MHZUPPERVIEWWIDTH - indexViewWidth)/2, y: MHZUPPERVIEWHEIGHT-2, width: indexViewWidth, height: 2))
         indexView.backgroundColor = UIColor.red
-        indexView.layer.cornerRadius = MHZUPPERVIEWHEIGHT/2
+        indexView.layer.cornerRadius = 1
         indexView.layer.masksToBounds = true
         titleView.addSubview(indexView)
         titleView.bringSubviewToFront(indexView)
@@ -93,6 +99,8 @@ class MHZUpLowLinkView: UIView,UIScrollViewDelegate {
         contentView.delegate = self
         contentView.dataSource = self
         contentView.register(MHZUpLowLowerCell.self, forCellWithReuseIdentifier: MHZUpLowLinkView.MHZUpLowLowerCellID)
+        contentView.bounces = false
+        contentView.showsHorizontalScrollIndicator = false
         self.addSubview(contentView)
         contentView.isPagingEnabled = true
         
@@ -105,14 +113,30 @@ class MHZUpLowLinkView: UIView,UIScrollViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if scrollView.isEqual(contentView) {
-            indexView.x = (contentView.contentOffset.x/contentView.contentSize.width)*titleView.contentSize.width
+            if moveWithAnimat == true{
+                indexView.x = (contentView.contentOffset.x/contentView.contentSize.width)*titleView.contentSize.width + (MHZUPPERVIEWWIDTH - indexViewWidth)/2
+            }else{
+                
+                weak var weakSelf = self
+                UIView.animate(withDuration: 0.3) {
+                    weakSelf?.indexView.x = (weakSelf!.contentView.contentOffset.x/weakSelf!.contentView.contentSize.width)*weakSelf!.titleView.contentSize.width + (weakSelf!.MHZUPPERVIEWWIDTH - weakSelf!.indexViewWidth)/2
+                }
+                
+                let index = NSInteger(scrollView.contentOffset.x/linkViewSize.width)
+                let indexNew = (index - 2)>0 ? (index - 2) : 0
+                titleView.scrollToItem(at: IndexPath.init(row:indexNew, section: 0), at: .left, animated: true)
+            }
+            moveWithAnimat = true
         }
     }
     
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         if scrollView.isEqual(contentView) {
+            let index = NSInteger(scrollView.contentOffset.x/linkViewSize.width)
             
+            let indexNew = (index - 2)>0 ? (index - 2) : 0
+            titleView.scrollToItem(at: IndexPath.init(row:indexNew, section: 0), at: .left, animated: true)
         }
     }
     
@@ -126,23 +150,34 @@ class MHZUpLowLinkView: UIView,UIScrollViewDelegate {
 
 extension MHZUpLowLinkView:UICollectionViewDelegate,UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return titleArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell : UICollectionViewCell!
-        if collectionView.isEqual(titleView){
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: MHZUpLowLinkView.MHZUpLowUpperCellID, for: indexPath)
-        }else{
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: MHZUpLowLinkView.MHZUpLowLowerCellID, for: indexPath)
-        }
-        cell.backgroundColor = UIColor.init(red: CGFloat(Float(arc4random()%255)/255.0), green: CGFloat(Float(arc4random()%255)/255.0), blue: CGFloat(Float(arc4random()%255)/255.0), alpha: 1.0)
         
-        return cell
+        if collectionView.isEqual(titleView){
+            let cell : MHZUpLowUpperCell!
+            cell = (collectionView.dequeueReusableCell(withReuseIdentifier: MHZUpLowLinkView.MHZUpLowUpperCellID, for: indexPath) as! MHZUpLowUpperCell)
+            cell.setUpTitle(title: titleArray?[indexPath.row] as! String)
+            collectionView.bringSubviewToFront(cell.titleLab)
+            return cell
+            
+        }else{
+            let cell : MHZUpLowLowerCell!
+            cell = (collectionView.dequeueReusableCell(withReuseIdentifier: MHZUpLowLinkView.MHZUpLowLowerCellID, for: indexPath) as! MHZUpLowLowerCell)
+            let contentView = contentArray[indexPath.row] as! UIView
+            cell.addSubview(contentView)
+            contentView.snp.makeConstraints { (make) in
+                make.top.left.right.bottom.equalToSuperview()
+            }
+            return cell
+        }
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView.isEqual(titleView) {
+            moveWithAnimat = false
             contentView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: false)
         }
     }
