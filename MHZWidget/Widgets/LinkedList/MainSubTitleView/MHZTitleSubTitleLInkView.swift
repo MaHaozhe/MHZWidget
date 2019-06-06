@@ -28,10 +28,12 @@ class MHZTitleSubTitleLInkView: UIView {
     
     
     func setupSubVeiws() {
-        tableView = UITableView.init()
+        tableView = UITableView.init(frame: CGRect.zero, style: .grouped)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "TitleLInkViewUITableViewCell")
+        tableView.register(MHZTitleSubTitleLInkViewSection.self, forHeaderFooterViewReuseIdentifier: "MHZTitleSubTitleLInkViewSection")
+        tableView.bounces = false
         self.addSubview(tableView)
         
         tableView.snp.makeConstraints { (make) in
@@ -56,16 +58,27 @@ extension MHZTitleSubTitleLInkView : UITableViewDataSource {
         return UITableViewCell.init()
     }
     
-//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//
-//
-//
-//    }
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        let sectionView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "MHZTitleSubTitleLInkViewSection") as! MHZTitleSubTitleLInkViewSection
+        let title = (listData[section] as! NSDictionary).object(forKey: "title")
+        sectionView.setupTitle(titleStr: title as! String,sectionIndex: section)
+//        sectionView.clickCallback =
+        return sectionView
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 40
+    }
+    
     
     
 }
 
 extension MHZTitleSubTitleLInkView : UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
     
 }

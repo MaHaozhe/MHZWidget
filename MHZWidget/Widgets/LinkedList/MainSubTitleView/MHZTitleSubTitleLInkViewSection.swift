@@ -8,22 +8,23 @@
 
 import UIKit
 
-class MHZTitleSubTitleLInkViewSection: UIView {
+class MHZTitleSubTitleLInkViewSection: UITableViewHeaderFooterView {
 
     var title : String!
     var icon : UIImageView!
     var label : UILabel!
     var isOpen : Bool!
+    var index : NSInteger!
+    typealias clickCallbackfunc = (NSInteger)->Void
+    var clickCallback : clickCallbackfunc?
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    override init(reuseIdentifier: String?) {
+        super.init(reuseIdentifier: reuseIdentifier)
         
-    }
-    
-    convenience init(titleStr:String) {
-        self.init()
-        title = titleStr
+//        title = titleStr
         isOpen = false
+        
+        self.contentView.backgroundColor = UIColor.white
         
         self.setupSubviews()
     }
@@ -44,8 +45,41 @@ class MHZTitleSubTitleLInkViewSection: UIView {
         label = UILabel.init()
         label.text = title
         label.textColor = UIColor.black
+        label.textAlignment = NSTextAlignment.left
+        label.font = UIFont.systemFont(ofSize: 15)
+        self.addSubview(label)
+        
+        label.snp.makeConstraints { (make) in
+            make.left.equalTo(icon.snp_rightMargin).offset(10)
+            make.top.bottom.equalToSuperview()
+            make.width.equalTo(200)
+        }
+        
+        let line = UIView.init()
+        line.backgroundColor = UIColor.init(red: 220/255.0, green: 220/255.0, blue: 220/255.0, alpha: 1)
+        self.addSubview(line)
+        
+        line.snp.makeConstraints { (make) in
+            make.bottom.left.right.equalToSuperview()
+            make.height.equalTo(0.3)
+        }
         
         
+        let tapAction = UITapGestureRecognizer.init(target: self, action: #selector(clickSectionItemAction))
+        self.addGestureRecognizer(tapAction)
+    }
+    
+    func setupTitle(titleStr : String,sectionIndex:NSInteger) {
+        label.text = titleStr
+        index = sectionIndex
+    }
+    
+    func setupSectionOpenOrOff(isOpen : Bool) {
+        
+    }
+    
+    @objc func clickSectionItemAction() {
+//        clickCallback!(index)
     }
     
     required init?(coder aDecoder: NSCoder) {
