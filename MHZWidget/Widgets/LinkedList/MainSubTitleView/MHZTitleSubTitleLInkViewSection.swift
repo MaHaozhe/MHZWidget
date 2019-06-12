@@ -79,7 +79,9 @@ class MHZTitleSubTitleLInkViewSection: UITableViewHeaderFooterView {
     }
     
     @objc func clickSectionItemAction() {
-//        clickCallback!(index)
+        if (clickCallback != nil) {
+            clickCallback!(index)
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {

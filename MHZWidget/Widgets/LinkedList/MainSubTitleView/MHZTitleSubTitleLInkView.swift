@@ -81,7 +81,12 @@ extension MHZTitleSubTitleLInkView : UITableViewDataSource {
         let sectionView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "MHZTitleSubTitleLInkViewSection") as! MHZTitleSubTitleLInkViewSection
         let model = listData![section] as! MHZTitleSubTitleLInkViewModel
         sectionView.setupTitle(titleStr: model.titleName ,sectionIndex: section)
-        
+        sectionView.clickCallback = {(index)->() in
+            if index == section {
+                model.didSelected == true ? (model.didSelected = false) : (model.didSelected = true)
+                tableView.reloadSections(IndexSet.init(integer: section), with: .automatic)
+            }
+        }
         return sectionView
     }
     
