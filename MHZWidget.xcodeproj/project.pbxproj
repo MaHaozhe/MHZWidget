@@ -16,6 +16,7 @@
 		2309C90B22967B82002762FB /* MHZNavigaitonC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309C90822967B82002762FB /* MHZNavigaitonC.swift */; };
 		2309C90E22968A64002762FB /* CommonTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309C90D22968A64002762FB /* CommonTabBarVC.swift */; };
 		2309C91022968DCC002762FB /* RootMyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309C90F22968DCC002762FB /* RootMyVC.swift */; };
+		2334E65722B0E6EC00233C73 /* MHZTitleSubTitleLInkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2334E65622B0E6EC00233C73 /* MHZTitleSubTitleLInkViewModel.swift */; };
 		2343AA2B22A5063A00E056F5 /* MHZUpLowLowerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2343AA2A22A5063A00E056F5 /* MHZUpLowLowerContentView.swift */; };
 		2343AA2E22A5117E00E056F5 /* MHZTitleSubTitleLInkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2343AA2D22A5117E00E056F5 /* MHZTitleSubTitleLInkView.swift */; };
 		2343AA3022A51CEC00E056F5 /* MHZTitleSubTitleLInkViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2343AA2F22A51CEC00E056F5 /* MHZTitleSubTitleLInkViewSection.swift */; };
@@ -44,6 +45,7 @@
 		2309C90822967B82002762FB /* MHZNavigaitonC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHZNavigaitonC.swift; sourceTree = "<group>"; };
 		2309C90D22968A64002762FB /* CommonTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTabBarVC.swift; sourceTree = "<group>"; };
 		2309C90F22968DCC002762FB /* RootMyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootMyVC.swift; sourceTree = "<group>"; };
+		2334E65622B0E6EC00233C73 /* MHZTitleSubTitleLInkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZTitleSubTitleLInkViewModel.swift; sourceTree = "<group>"; };
 		2343AA2A22A5063A00E056F5 /* MHZUpLowLowerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZUpLowLowerContentView.swift; sourceTree = "<group>"; };
 		2343AA2D22A5117E00E056F5 /* MHZTitleSubTitleLInkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZTitleSubTitleLInkView.swift; sourceTree = "<group>"; };
 		2343AA2F22A51CEC00E056F5 /* MHZTitleSubTitleLInkViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZTitleSubTitleLInkViewSection.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				2343AA2D22A5117E00E056F5 /* MHZTitleSubTitleLInkView.swift */,
 				2343AA2F22A51CEC00E056F5 /* MHZTitleSubTitleLInkViewSection.swift */,
 				2351131A22A7BE3200D360D9 /* TitSubTitleDataList.plist */,
+				2334E65622B0E6EC00233C73 /* MHZTitleSubTitleLInkViewModel.swift */,
 			);
 			path = MainSubTitleView;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				2309C90A22967B82002762FB /* CoFirstVC.swift in Sources */,
 				23EB63A4229E36E000EE1BAA /* MHZTouchTBVCell.swift in Sources */,
 				2309C90E22968A64002762FB /* CommonTabBarVC.swift in Sources */,
+				2334E65722B0E6EC00233C73 /* MHZTitleSubTitleLInkViewModel.swift in Sources */,
 				23084BC8224872FD00DE329D /* AppDelegate.swift in Sources */,
 				23BA67FE229FAA79009AEBA2 /* MHZLinkListVC.swift in Sources */,
 				23BA6802229FE372009AEBA2 /* MHZUpLowUpperCell.swift in Sources */,

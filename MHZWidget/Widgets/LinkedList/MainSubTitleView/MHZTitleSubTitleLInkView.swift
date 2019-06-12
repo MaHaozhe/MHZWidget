@@ -10,7 +10,7 @@ import UIKit
 
 class MHZTitleSubTitleLInkView: UIView {
     
-    var listData : NSArray!
+    var listData : NSMutableArray!
     var tableView : UITableView!
     
     override init(frame: CGRect) {
@@ -21,7 +21,13 @@ class MHZTitleSubTitleLInkView: UIView {
     convenience init(dataArr : NSArray){
         self.init()
         
-        listData = NSArray.init(array: dataArr)
+        listData = NSMutableArray.init()
+        
+        for dic in dataArr {
+            let dataModel = MHZTitleSubTitleLInkViewModel.init()
+            dataModel.setupModelDataWithDic(dataDic: dic as! NSDictionary)
+            listData.add(dataModel)
+        }
         
         self.setupSubVeiws()
     }
@@ -49,21 +55,33 @@ class MHZTitleSubTitleLInkView: UIView {
 }
 
 extension MHZTitleSubTitleLInkView : UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
         return listData.count
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let model = listData![section] as! MHZTitleSubTitleLInkViewModel
+        let count = model.didSelected ? model.subTitleArr.count:0
+        return count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        return UITableViewCell.init()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TitleLInkViewUITableViewCell", for: indexPath)
+        
+        let model = listData![indexPath.section] as! MHZTitleSubTitleLInkViewModel
+        cell.textLabel?.text = model.subTitleArr[indexPath.row] as? String
+        
+        return cell
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
         let sectionView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "MHZTitleSubTitleLInkViewSection") as! MHZTitleSubTitleLInkViewSection
-        let title = (listData[section] as! NSDictionary).object(forKey: "title")
-        sectionView.setupTitle(titleStr: title as! String,sectionIndex: section)
-//        sectionView.clickCallback =
+        let model = listData![section] as! MHZTitleSubTitleLInkViewModel
+        sectionView.setupTitle(titleStr: model.titleName ,sectionIndex: section)
+        
         return sectionView
     }
     
@@ -71,7 +89,13 @@ extension MHZTitleSubTitleLInkView : UITableViewDataSource {
         return 40
     }
     
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return UIView.init()
+    }
     
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 0.0
+    }
     
 }
 
