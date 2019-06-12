@@ -32,14 +32,15 @@ class MHZTitleSubTitleLInkViewSection: UITableViewHeaderFooterView {
     
     func setupSubviews() {
         icon = UIImageView.init()
-        icon.image = UIImage.init(named: "123")
-        icon.contentMode = .scaleAspectFit
+        icon.image = UIImage.init(named: "Common_rightArrow")
+        icon.contentMode = .scaleAspectFill
         self.addSubview(icon)
         
         icon.snp.makeConstraints { (make) in
-            make.top.bottom.equalToSuperview()
+            make.centerY.equalToSuperview()
+            make.width.equalTo(12)
+            make.height.equalTo(8)
             make.left.equalToSuperview().offset(10)
-            make.width.equalTo(20)
         }
         
         label = UILabel.init()

@@ -168,7 +168,8 @@ extension MHZUpLowLinkView:UICollectionViewDelegate,UICollectionViewDataSource{
             let contentView = contentArray[indexPath.row] as! UIView
             cell.addSubview(contentView)
             contentView.snp.makeConstraints { (make) in
-                make.top.left.right.bottom.equalToSuperview()
+                make.top.equalToSuperview().offset(12)//不知道为什么这个view会上移，问题有待查找
+                make.left.right.bottom.equalToSuperview()
             }
             return cell
         }

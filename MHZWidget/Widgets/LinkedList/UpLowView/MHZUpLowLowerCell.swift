@@ -15,19 +15,14 @@ class MHZUpLowLowerCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+        self.contentView.backgroundColor = UIColor.white
         
         self.setupSubviews()
     }
     
     
     func setupSubviews() {
-        let view = UIView.init()
         
-        self .addSubview(view)
-        
-        view.snp.makeConstraints { (make) in
-            make.edges.equalToSuperview()
-        }
     }
     
     

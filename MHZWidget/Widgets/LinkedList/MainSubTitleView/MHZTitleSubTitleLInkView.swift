@@ -84,7 +84,7 @@ extension MHZTitleSubTitleLInkView : UITableViewDataSource {
         sectionView.clickCallback = {(index)->() in
             if index == section {
                 model.didSelected == true ? (model.didSelected = false) : (model.didSelected = true)
-                tableView.reloadSections(IndexSet.init(integer: section), with: .automatic)
+                tableView.reloadSections(IndexSet.init(integer: section), with: .none)
             }
         }
         return sectionView
