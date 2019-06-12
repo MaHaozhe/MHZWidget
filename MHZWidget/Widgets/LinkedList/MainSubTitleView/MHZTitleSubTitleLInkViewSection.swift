@@ -21,7 +21,6 @@ class MHZTitleSubTitleLInkViewSection: UITableViewHeaderFooterView {
     override init(reuseIdentifier: String?) {
         super.init(reuseIdentifier: reuseIdentifier)
         
-//        title = titleStr
         isOpen = false
         
         self.contentView.backgroundColor = UIColor.white
@@ -70,19 +69,47 @@ class MHZTitleSubTitleLInkViewSection: UITableViewHeaderFooterView {
         self.addGestureRecognizer(tapAction)
     }
     
-    func setupTitle(titleStr : String,sectionIndex:NSInteger) {
-        label.text = titleStr
+    func setupTitle(model : MHZTitleSubTitleLInkViewModel,sectionIndex:NSInteger) {
+        label.text = model.titleName
         index = sectionIndex
+        if model.didSelected == false {
+            self.addArrowAnimationWithViewAndType(view: icon, type: 2)
+        }else{
+            self.addArrowAnimationWithViewAndType(view: icon, type: 1)
+        }
     }
     
-    func setupSectionOpenOrOff(isOpen : Bool) {
-        
-    }
     
     @objc func clickSectionItemAction() {
         if (clickCallback != nil) {
             clickCallback!(index)
         }
+    }
+    
+    
+    /// 打开收起抽屉时尖头旋转的动画
+    ///
+    /// - Parameters:
+    ///   - view: 需要旋转的view
+    ///   - type: 旋转类型 1为向下旋转，2位向右旋转
+    func addArrowAnimationWithViewAndType(view:UIView,type:NSInteger) {
+        //1.创建动画
+        let rotationAnim = CABasicAnimation(keyPath: "transform.rotation.z")
+        //2.设置动画的属性
+        if type == 1 {
+            rotationAnim.fromValue = 0
+            rotationAnim.toValue = Double.pi/2
+        }else if type == 2 {
+            rotationAnim.fromValue = Double.pi/2
+            rotationAnim.toValue = 0
+        }
+        rotationAnim.repeatCount = 1
+        rotationAnim.duration = 0.3
+        // 这个属性很重要 如果不设置当页面运行到后台再次进入该页面的时候 动画会停止
+        rotationAnim.isRemovedOnCompletion = false
+        rotationAnim.fillMode = CAMediaTimingFillMode.forwards;
+        //3.添加动画到对应的view上
+        view.layer.add(rotationAnim, forKey: nil)
     }
     
     required init?(coder aDecoder: NSCoder) {
