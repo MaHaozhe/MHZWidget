@@ -50,7 +50,7 @@ class MHZTitleSubTitleLInkViewSection: UITableViewHeaderFooterView {
         self.addSubview(label)
         
         label.snp.makeConstraints { (make) in
-            make.left.equalTo(icon.snp_rightMargin).offset(10)
+            make.left.equalTo(icon.snp_rightMargin).offset(15)
             make.top.bottom.equalToSuperview()
             make.width.equalTo(200)
         }
@@ -104,7 +104,7 @@ class MHZTitleSubTitleLInkViewSection: UITableViewHeaderFooterView {
             rotationAnim.toValue = 0
         }
         rotationAnim.repeatCount = 1
-        rotationAnim.duration = 0.3
+        rotationAnim.duration = 0.2
         // 这个属性很重要 如果不设置当页面运行到后台再次进入该页面的时候 动画会停止
         rotationAnim.isRemovedOnCompletion = false
         rotationAnim.fillMode = CAMediaTimingFillMode.forwards;
