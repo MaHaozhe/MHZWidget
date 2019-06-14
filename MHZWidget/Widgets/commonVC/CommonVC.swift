@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CoFirstVC: UIViewController {
+class CommonVC: UIViewController {
 
     var vcTitle : String
     
@@ -24,6 +24,9 @@ class CoFirstVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //防止view显示在导航下边
+        self.edgesForExtendedLayout = []
         
         self.navigationItem.title = self.vcTitle
         

@@ -9,20 +9,19 @@
 import UIKit
 
 @available(iOS 9.0, *)
-class MHZTouchTBVC: UIViewController,UIViewControllerPreviewingDelegate {
+class MHZTouchTBVC: CommonVC,UIViewControllerPreviewingDelegate {
     
     private var touchTableview : UITableView!
     static var TouchTableCellID = "touchTableCellID"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.navigationItem.title = "3D Touch Cell"
         
         self.view.backgroundColor = UIColor.white
         
         self.setupTableView()
         
+        //注册参与3d touch的view 以供pop和peek
         registerForPreviewing(with: self, sourceView: touchTableview)
     }
     

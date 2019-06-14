@@ -45,13 +45,15 @@ extension RootViewController : UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let cell = tableView.cellForRow(at: indexPath)
-        let returnVC = CoFirstVC(vcTitle: cell?.textLabel?.text ?? "无标题")
+        let returnVC = CommonVC(vcTitle: cell?.textLabel?.text ?? "无标题")
         
         switch indexPath.row {
         case 0:
-            self.navigationController?.pushViewController(MHZTouchTBVC(), animated: true)
+            self.navigationController?.pushViewController(MHZTouchTBVC(vcTitle: "3D Touch Cell"), animated: true)
         case 1:
-            self.navigationController?.pushViewController(MHZLinkListVC(), animated: true)
+            self.navigationController?.pushViewController(MHZLinkListVC(vcTitle: "Linked List"), animated: true)
+        case 2:
+            self.navigationController?.pushViewController(MHZPickerViewVC(vcTitle: "PickerView"), animated: true)
         default:
             self.navigationController?.pushViewController(returnVC, animated: true)
         }
@@ -75,6 +77,8 @@ extension RootViewController : UITableViewDataSource{
             cell.textLabel?.text = "3D Touch"
         case 1:
             cell.textLabel?.text = "Link List"
+        case 2:
+            cell.textLabel?.text = "PickerView"
         default:
             cell.textLabel?.text = String.init(format: "commonCell %d", indexPath.row+1)
         }

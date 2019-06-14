@@ -8,17 +8,12 @@
 
 import UIKit
 
-class MHZLinkListVC: UIViewController {
+class MHZLinkListVC: CommonVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.title = "Linked List"
-        
         self.view.backgroundColor = UIColor.white
-        
-        //防止view显示在导航下边
-        self.edgesForExtendedLayout = []
         
         //第一列view的数据
         let filePath = Bundle.main.path(forResource: "TitSubTitleDataList", ofType: ".plist")
