@@ -10,4 +10,12 @@ import UIKit
 
 extension MHZPickerViewVC : UIPickerViewDelegate{
     
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        guard let feature = Feature(rawValue: component) else {
+            fatalError("Invalid component \(component) found to represent a \(Feature.self). This should not happen based on the configuration set in the storyboard.")
+        }
+        
+        return pickerDataSource.title(for: row, feature: feature)
+    }
+    
 }

@@ -17,6 +17,10 @@ class MHZPickerViewVC: CommonVC {
             pickerView.delegate = self
             pickerView.dataSource = pickerDataSource
             
+            let features: [Feature] = [.solarPanels,.greenhouses,.size]
+            for feature in features {
+                pickerView.selectRow(2, inComponent: feature.rawValue, animated: false)
+            }
         }
     }
     

@@ -24,6 +24,10 @@
 		238BA90D22B3818700F727F1 /* MHZPickerViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238BA90C22B3818700F727F1 /* MHZPickerViewVC.swift */; };
 		238BA91022B388B000F727F1 /* MHZPickerViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238BA90F22B388B000F727F1 /* MHZPickerViewDataSource.swift */; };
 		238BA91222B3895800F727F1 /* ViewController+PickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238BA91122B3895800F727F1 /* ViewController+PickerViewDelegate.swift */; };
+		238BA91422B3974600F727F1 /* SolarPanelDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238BA91322B3974600F727F1 /* SolarPanelDataSource.swift */; };
+		238BA91622B3999300F727F1 /* GreenhousesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238BA91522B3999300F727F1 /* GreenhousesDataSource.swift */; };
+		238BA91822B39BE500F727F1 /* SizeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238BA91722B39BE500F727F1 /* SizeDataSource.swift */; };
+		238BA91A22B3A28B00F727F1 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238BA91922B3A28B00F727F1 /* Feature.swift */; };
 		23BA67FE229FAA79009AEBA2 /* MHZLinkListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BA67FD229FAA79009AEBA2 /* MHZLinkListVC.swift */; };
 		23BA6800229FD26E009AEBA2 /* MHZUpLowLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BA67FF229FD26E009AEBA2 /* MHZUpLowLinkView.swift */; };
 		23BA6802229FE372009AEBA2 /* MHZUpLowUpperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BA6801229FE372009AEBA2 /* MHZUpLowUpperCell.swift */; };
@@ -56,6 +60,10 @@
 		238BA90C22B3818700F727F1 /* MHZPickerViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZPickerViewVC.swift; sourceTree = "<group>"; };
 		238BA90F22B388B000F727F1 /* MHZPickerViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZPickerViewDataSource.swift; sourceTree = "<group>"; };
 		238BA91122B3895800F727F1 /* ViewController+PickerViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+PickerViewDelegate.swift"; sourceTree = "<group>"; };
+		238BA91322B3974600F727F1 /* SolarPanelDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarPanelDataSource.swift; sourceTree = "<group>"; };
+		238BA91522B3999300F727F1 /* GreenhousesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenhousesDataSource.swift; sourceTree = "<group>"; };
+		238BA91722B39BE500F727F1 /* SizeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeDataSource.swift; sourceTree = "<group>"; };
+		238BA91922B3A28B00F727F1 /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
 		23BA67FD229FAA79009AEBA2 /* MHZLinkListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZLinkListVC.swift; sourceTree = "<group>"; };
 		23BA67FF229FD26E009AEBA2 /* MHZUpLowLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZUpLowLinkView.swift; sourceTree = "<group>"; };
 		23BA6801229FE372009AEBA2 /* MHZUpLowUpperCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZUpLowUpperCell.swift; sourceTree = "<group>"; };
@@ -194,6 +202,7 @@
 			children = (
 				238BA90C22B3818700F727F1 /* MHZPickerViewVC.swift */,
 				238BA91122B3895800F727F1 /* ViewController+PickerViewDelegate.swift */,
+				238BA91922B3A28B00F727F1 /* Feature.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -202,6 +211,9 @@
 			isa = PBXGroup;
 			children = (
 				238BA90F22B388B000F727F1 /* MHZPickerViewDataSource.swift */,
+				238BA91322B3974600F727F1 /* SolarPanelDataSource.swift */,
+				238BA91522B3999300F727F1 /* GreenhousesDataSource.swift */,
+				238BA91722B39BE500F727F1 /* SizeDataSource.swift */,
 			);
 			path = DataSouces;
 			sourceTree = "<group>";
@@ -398,15 +410,19 @@
 				23084BCA224872FD00DE329D /* RootViewController.swift in Sources */,
 				23FA3BC422A126C4008C2BB8 /* MHZUIDefine.swift in Sources */,
 				23FA3BBF22A0CA9B008C2BB8 /* MHZUpLowLowerCell.swift in Sources */,
+				238BA91A22B3A28B00F727F1 /* Feature.swift in Sources */,
 				23EB63A6229E7C6000EE1BAA /* MHZTouchDetailVC.swift in Sources */,
 				2343AA2B22A5063A00E056F5 /* MHZUpLowLowerContentView.swift in Sources */,
 				23BA6800229FD26E009AEBA2 /* MHZUpLowLinkView.swift in Sources */,
+				238BA91422B3974600F727F1 /* SolarPanelDataSource.swift in Sources */,
 				2343AA3022A51CEC00E056F5 /* MHZTitleSubTitleLInkViewSection.swift in Sources */,
 				2309C90A22967B82002762FB /* CommonVC.swift in Sources */,
 				23EB63A4229E36E000EE1BAA /* MHZTouchTBVCell.swift in Sources */,
+				238BA91622B3999300F727F1 /* GreenhousesDataSource.swift in Sources */,
 				2309C90E22968A64002762FB /* CommonTabBarVC.swift in Sources */,
 				2334E65722B0E6EC00233C73 /* MHZTitleSubTitleLInkViewModel.swift in Sources */,
 				23084BC8224872FD00DE329D /* AppDelegate.swift in Sources */,
+				238BA91822B39BE500F727F1 /* SizeDataSource.swift in Sources */,
 				23BA67FE229FAA79009AEBA2 /* MHZLinkListVC.swift in Sources */,
 				238BA91222B3895800F727F1 /* ViewController+PickerViewDelegate.swift in Sources */,
 				23BA6802229FE372009AEBA2 /* MHZUpLowUpperCell.swift in Sources */,
