@@ -21,6 +21,7 @@
 		2343AA2E22A5117E00E056F5 /* MHZTitleSubTitleLInkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2343AA2D22A5117E00E056F5 /* MHZTitleSubTitleLInkView.swift */; };
 		2343AA3022A51CEC00E056F5 /* MHZTitleSubTitleLInkViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2343AA2F22A51CEC00E056F5 /* MHZTitleSubTitleLInkViewSection.swift */; };
 		2351131B22A7BE3200D360D9 /* TitSubTitleDataList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2351131A22A7BE3200D360D9 /* TitSubTitleDataList.plist */; };
+		238BA90D22B3818700F727F1 /* MHZPickerViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238BA90C22B3818700F727F1 /* MHZPickerViewVC.swift */; };
 		23BA67FE229FAA79009AEBA2 /* MHZLinkListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BA67FD229FAA79009AEBA2 /* MHZLinkListVC.swift */; };
 		23BA6800229FD26E009AEBA2 /* MHZUpLowLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BA67FF229FD26E009AEBA2 /* MHZUpLowLinkView.swift */; };
 		23BA6802229FE372009AEBA2 /* MHZUpLowUpperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BA6801229FE372009AEBA2 /* MHZUpLowUpperCell.swift */; };
@@ -50,6 +51,7 @@
 		2343AA2D22A5117E00E056F5 /* MHZTitleSubTitleLInkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZTitleSubTitleLInkView.swift; sourceTree = "<group>"; };
 		2343AA2F22A51CEC00E056F5 /* MHZTitleSubTitleLInkViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZTitleSubTitleLInkViewSection.swift; sourceTree = "<group>"; };
 		2351131A22A7BE3200D360D9 /* TitSubTitleDataList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TitSubTitleDataList.plist; sourceTree = "<group>"; };
+		238BA90C22B3818700F727F1 /* MHZPickerViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZPickerViewVC.swift; sourceTree = "<group>"; };
 		23BA67FD229FAA79009AEBA2 /* MHZLinkListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZLinkListVC.swift; sourceTree = "<group>"; };
 		23BA67FF229FD26E009AEBA2 /* MHZUpLowLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZUpLowLinkView.swift; sourceTree = "<group>"; };
 		23BA6801229FE372009AEBA2 /* MHZUpLowUpperCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZUpLowUpperCell.swift; sourceTree = "<group>"; };
@@ -111,9 +113,8 @@
 		2309C90222967B82002762FB /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
+				238BA90A22B3813400F727F1 /* Widgets */,
 				23FA3BC022A0CD71008C2BB8 /* Tools */,
-				23BA67FA229FAA3A009AEBA2 /* LinkedList */,
-				23EB639D229E34B400EE1BAA /* 3DTouchTBV */,
 				2309C90C22968A19002762FB /* tabbar */,
 				2309C90322967B82002762FB /* commonCell */,
 				2309C90522967B82002762FB /* commonVC */,
@@ -163,6 +164,32 @@
 				2334E65622B0E6EC00233C73 /* MHZTitleSubTitleLInkViewModel.swift */,
 			);
 			path = MainSubTitleView;
+			sourceTree = "<group>";
+		};
+		238BA90922B3811600F727F1 /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				238BA90B22B3816D00F727F1 /* Controller */,
+			);
+			path = PickerView;
+			sourceTree = "<group>";
+		};
+		238BA90A22B3813400F727F1 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				238BA90922B3811600F727F1 /* PickerView */,
+				23BA67FA229FAA3A009AEBA2 /* LinkedList */,
+				23EB639D229E34B400EE1BAA /* 3DTouchTBV */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		238BA90B22B3816D00F727F1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				238BA90C22B3818700F727F1 /* MHZPickerViewVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		23BA67FA229FAA3A009AEBA2 /* LinkedList */ = {
@@ -368,6 +395,7 @@
 				23084BC8224872FD00DE329D /* AppDelegate.swift in Sources */,
 				23BA67FE229FAA79009AEBA2 /* MHZLinkListVC.swift in Sources */,
 				23BA6802229FE372009AEBA2 /* MHZUpLowUpperCell.swift in Sources */,
+				238BA90D22B3818700F727F1 /* MHZPickerViewVC.swift in Sources */,
 				23EB63A2229E351200EE1BAA /* MHZTouchTBVC.swift in Sources */,
 				2309C90922967B82002762FB /* CommonTVCell.swift in Sources */,
 				2343AA2E22A5117E00E056F5 /* MHZTitleSubTitleLInkView.swift in Sources */,
