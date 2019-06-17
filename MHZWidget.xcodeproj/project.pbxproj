@@ -21,6 +21,7 @@
 		2343AA2E22A5117E00E056F5 /* MHZTitleSubTitleLInkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2343AA2D22A5117E00E056F5 /* MHZTitleSubTitleLInkView.swift */; };
 		2343AA3022A51CEC00E056F5 /* MHZTitleSubTitleLInkViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2343AA2F22A51CEC00E056F5 /* MHZTitleSubTitleLInkViewSection.swift */; };
 		2351131B22A7BE3200D360D9 /* TitSubTitleDataList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2351131A22A7BE3200D360D9 /* TitSubTitleDataList.plist */; };
+		236168FF22B78C5100594415 /* MarsHabitatPricer.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 236168FE22B78C5100594415 /* MarsHabitatPricer.mlmodel */; };
 		238BA90D22B3818700F727F1 /* MHZPickerViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238BA90C22B3818700F727F1 /* MHZPickerViewVC.swift */; };
 		238BA91022B388B000F727F1 /* MHZPickerViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238BA90F22B388B000F727F1 /* MHZPickerViewDataSource.swift */; };
 		238BA91222B3895800F727F1 /* ViewController+PickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238BA91122B3895800F727F1 /* ViewController+PickerViewDelegate.swift */; };
@@ -57,6 +58,7 @@
 		2343AA2D22A5117E00E056F5 /* MHZTitleSubTitleLInkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZTitleSubTitleLInkView.swift; sourceTree = "<group>"; };
 		2343AA2F22A51CEC00E056F5 /* MHZTitleSubTitleLInkViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZTitleSubTitleLInkViewSection.swift; sourceTree = "<group>"; };
 		2351131A22A7BE3200D360D9 /* TitSubTitleDataList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TitSubTitleDataList.plist; sourceTree = "<group>"; };
+		236168FE22B78C5100594415 /* MarsHabitatPricer.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MarsHabitatPricer.mlmodel; sourceTree = "<group>"; };
 		238BA90C22B3818700F727F1 /* MHZPickerViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZPickerViewVC.swift; sourceTree = "<group>"; };
 		238BA90F22B388B000F727F1 /* MHZPickerViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZPickerViewDataSource.swift; sourceTree = "<group>"; };
 		238BA91122B3895800F727F1 /* ViewController+PickerViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+PickerViewDelegate.swift"; sourceTree = "<group>"; };
@@ -178,9 +180,18 @@
 			path = MainSubTitleView;
 			sourceTree = "<group>";
 		};
+		236168FD22B78C2200594415 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				236168FE22B78C5100594415 /* MarsHabitatPricer.mlmodel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		238BA90922B3811600F727F1 /* PickerView */ = {
 			isa = PBXGroup;
 			children = (
+				236168FD22B78C2200594415 /* Model */,
 				238BA90E22B3820B00F727F1 /* DataSouces */,
 				238BA90B22B3816D00F727F1 /* Controller */,
 			);
@@ -426,6 +437,7 @@
 				23BA67FE229FAA79009AEBA2 /* MHZLinkListVC.swift in Sources */,
 				238BA91222B3895800F727F1 /* ViewController+PickerViewDelegate.swift in Sources */,
 				23BA6802229FE372009AEBA2 /* MHZUpLowUpperCell.swift in Sources */,
+				236168FF22B78C5100594415 /* MarsHabitatPricer.mlmodel in Sources */,
 				238BA91022B388B000F727F1 /* MHZPickerViewDataSource.swift in Sources */,
 				238BA90D22B3818700F727F1 /* MHZPickerViewVC.swift in Sources */,
 				23EB63A2229E351200EE1BAA /* MHZTouchTBVC.swift in Sources */,
