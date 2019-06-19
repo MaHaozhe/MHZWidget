@@ -60,7 +60,7 @@ class MHZPickerViewVC: CommonVC {
         self.view.addSubview(priceLab)
         
         priceLab.snp.makeConstraints { (make) in
-            make.top.equalTo(pickerView.snp_bottom).offset(20)
+            make.top.equalTo(pickerView.snp_bottomMargin).offset(20)
             make.left.right.equalToSuperview()
             make.height.equalTo(30)
         }

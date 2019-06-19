@@ -54,10 +54,12 @@ extension RootViewController : UITableViewDelegate{
             self.navigationController?.pushViewController(MHZLinkListVC(vcTitle: "Linked List"), animated: true)
         case 2:
             self.navigationController?.pushViewController(MHZPickerViewVC(vcTitle: "PickerView"), animated: true)
+        case 3:
+            self.navigationController?.pushViewController(MHZNetworkDataVC(vcTitle: "NetworkData"), animated: true)
         default:
             self.navigationController?.pushViewController(returnVC, animated: true)
         }
-        
+//        MHZNetworkDataVC
     }
 }
 
@@ -79,6 +81,8 @@ extension RootViewController : UITableViewDataSource{
             cell.textLabel?.text = "Link List"
         case 2:
             cell.textLabel?.text = "PickerView"
+        case 3:
+            cell.textLabel?.text = "NetworkData"
         default:
             cell.textLabel?.text = String.init(format: "commonCell %d", indexPath.row+1)
         }

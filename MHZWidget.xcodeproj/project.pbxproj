@@ -21,6 +21,7 @@
 		2343AA2E22A5117E00E056F5 /* MHZTitleSubTitleLInkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2343AA2D22A5117E00E056F5 /* MHZTitleSubTitleLInkView.swift */; };
 		2343AA3022A51CEC00E056F5 /* MHZTitleSubTitleLInkViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2343AA2F22A51CEC00E056F5 /* MHZTitleSubTitleLInkViewSection.swift */; };
 		2351131B22A7BE3200D360D9 /* TitSubTitleDataList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2351131A22A7BE3200D360D9 /* TitSubTitleDataList.plist */; };
+		2358082B22B8E95700C1D5DD /* MHZNetworkDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2358082A22B8E95700C1D5DD /* MHZNetworkDataVC.swift */; };
 		236168FF22B78C5100594415 /* MarsHabitatPricer.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 236168FE22B78C5100594415 /* MarsHabitatPricer.mlmodel */; };
 		238BA90D22B3818700F727F1 /* MHZPickerViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238BA90C22B3818700F727F1 /* MHZPickerViewVC.swift */; };
 		238BA91022B388B000F727F1 /* MHZPickerViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238BA90F22B388B000F727F1 /* MHZPickerViewDataSource.swift */; };
@@ -58,6 +59,7 @@
 		2343AA2D22A5117E00E056F5 /* MHZTitleSubTitleLInkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZTitleSubTitleLInkView.swift; sourceTree = "<group>"; };
 		2343AA2F22A51CEC00E056F5 /* MHZTitleSubTitleLInkViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZTitleSubTitleLInkViewSection.swift; sourceTree = "<group>"; };
 		2351131A22A7BE3200D360D9 /* TitSubTitleDataList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TitSubTitleDataList.plist; sourceTree = "<group>"; };
+		2358082A22B8E95700C1D5DD /* MHZNetworkDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZNetworkDataVC.swift; sourceTree = "<group>"; };
 		236168FE22B78C5100594415 /* MarsHabitatPricer.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MarsHabitatPricer.mlmodel; sourceTree = "<group>"; };
 		238BA90C22B3818700F727F1 /* MHZPickerViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZPickerViewVC.swift; sourceTree = "<group>"; };
 		238BA90F22B388B000F727F1 /* MHZPickerViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZPickerViewDataSource.swift; sourceTree = "<group>"; };
@@ -180,6 +182,30 @@
 			path = MainSubTitleView;
 			sourceTree = "<group>";
 		};
+		2358082822B8D86800C1D5DD /* NetworkData */ = {
+			isa = PBXGroup;
+			children = (
+				2358082D22B8EC1900C1D5DD /* NetConfiger */,
+				2358082922B8D86800C1D5DD /* Controller */,
+			);
+			path = NetworkData;
+			sourceTree = "<group>";
+		};
+		2358082922B8D86800C1D5DD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2358082A22B8E95700C1D5DD /* MHZNetworkDataVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2358082D22B8EC1900C1D5DD /* NetConfiger */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetConfiger;
+			sourceTree = "<group>";
+		};
 		236168FD22B78C2200594415 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +227,7 @@
 		238BA90A22B3813400F727F1 /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
+				2358082822B8D86800C1D5DD /* NetworkData */,
 				238BA90922B3811600F727F1 /* PickerView */,
 				23BA67FA229FAA3A009AEBA2 /* LinkedList */,
 				23EB639D229E34B400EE1BAA /* 3DTouchTBV */,
@@ -423,6 +450,7 @@
 				23FA3BBF22A0CA9B008C2BB8 /* MHZUpLowLowerCell.swift in Sources */,
 				238BA91A22B3A28B00F727F1 /* Feature.swift in Sources */,
 				23EB63A6229E7C6000EE1BAA /* MHZTouchDetailVC.swift in Sources */,
+				2358082B22B8E95700C1D5DD /* MHZNetworkDataVC.swift in Sources */,
 				2343AA2B22A5063A00E056F5 /* MHZUpLowLowerContentView.swift in Sources */,
 				23BA6800229FD26E009AEBA2 /* MHZUpLowLinkView.swift in Sources */,
 				238BA91422B3974600F727F1 /* SolarPanelDataSource.swift in Sources */,
@@ -591,7 +619,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hachizhineng.MHZWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -611,7 +639,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hachizhineng.MHZWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
