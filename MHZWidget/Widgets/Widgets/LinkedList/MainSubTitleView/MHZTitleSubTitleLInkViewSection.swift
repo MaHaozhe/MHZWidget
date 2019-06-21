@@ -14,7 +14,10 @@ class MHZTitleSubTitleLInkViewSection: UITableViewHeaderFooterView {
     var icon : UIImageView!
     var label : UILabel!
     var isOpen : Bool!
-    var index : NSInteger!
+    var sectionI : NSInteger!
+    var sectionTableview : UITableView!
+    var sectionModel : MHZTitleSubTitleLInkViewModel!
+    
     typealias clickCallbackfunc = (NSInteger)->Void
     var clickCallback : clickCallbackfunc?
     
@@ -70,19 +73,39 @@ class MHZTitleSubTitleLInkViewSection: UITableViewHeaderFooterView {
     }
     
     func setupTitle(model : MHZTitleSubTitleLInkViewModel,sectionIndex:NSInteger) {
+        sectionModel = model
         label.text = model.titleName
-        index = sectionIndex
-        if model.didSelected == false {
-            self.addArrowAnimationWithViewAndType(view: icon, type: 2)
+        sectionI = sectionIndex
+        if sectionModel.didSelected == false {
+            self.addArrowAnimationWithViewAndType(view: icon, type: 2,animation: false)
         }else{
-            self.addArrowAnimationWithViewAndType(view: icon, type: 1)
+            self.addArrowAnimationWithViewAndType(view: icon, type: 1,animation: false)
         }
     }
     
-    
+    //MARK: 点击section，箭头旋转动画以及section的cell展开和关闭
     @objc func clickSectionItemAction() {
-        if (clickCallback != nil) {
-            clickCallback!(index)
+        if sectionModel.didSelected == false {
+            sectionModel.didSelected = true
+            self.addArrowAnimationWithViewAndType(view: icon, type: 1,animation: true)
+            var indexPaths = [IndexPath]()
+            let index      = sectionModel.subTitleArr.count
+            for i in 0 ..< index {
+                
+                indexPaths.append(IndexPath(item: i, section: sectionI!))
+            }
+            sectionTableview.insertRows(at: indexPaths, with: .automatic)
+        }else{
+            sectionModel.didSelected = false
+            self.addArrowAnimationWithViewAndType(view: icon, type: 2,animation: true)
+            var indexPaths = [IndexPath]()
+            let index      = sectionModel.subTitleArr.count
+            for i in 0 ..< index {
+                
+                indexPaths.append(IndexPath(item: i, section: sectionI!))
+            }
+            sectionTableview.deleteRows(at: indexPaths, with: .fade)
+            
         }
     }
     
@@ -92,7 +115,7 @@ class MHZTitleSubTitleLInkViewSection: UITableViewHeaderFooterView {
     /// - Parameters:
     ///   - view: 需要旋转的view
     ///   - type: 旋转类型 1为向下旋转，2位向右旋转
-    func addArrowAnimationWithViewAndType(view:UIView,type:NSInteger) {
+    func addArrowAnimationWithViewAndType(view:UIView,type:NSInteger,animation:Bool) {
         //1.创建动画
         let rotationAnim = CABasicAnimation(keyPath: "transform.rotation.z")
         //2.设置动画的属性
@@ -104,7 +127,12 @@ class MHZTitleSubTitleLInkViewSection: UITableViewHeaderFooterView {
             rotationAnim.toValue = 0
         }
         rotationAnim.repeatCount = 1
-        rotationAnim.duration = 0.2
+        if animation == true {
+            rotationAnim.duration = 0.25
+        }else{
+            rotationAnim.duration = 0
+        }
+        
         // 这个属性很重要 如果不设置当页面运行到后台再次进入该页面的时候 动画会停止
         rotationAnim.isRemovedOnCompletion = false
         rotationAnim.fillMode = CAMediaTimingFillMode.forwards;
