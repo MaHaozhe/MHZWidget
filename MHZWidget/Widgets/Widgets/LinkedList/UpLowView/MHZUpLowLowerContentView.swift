@@ -34,11 +34,27 @@ class MHZUpLowLowerContentView: UIView {
         self.tableView.dataSource = self
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "ContentViewUITableViewCell")
         self.addSubview(self.tableView)
+        self.tableView.mj_header = MJRefreshNormalHeader.init(refreshingBlock: {
+            
+            self.DispatchAfter(after: 2) {
+                self.tableView.mj_header.endRefreshing()
+                print("刷新完成")
+            }
+        })
         
         self.tableView.snp.makeConstraints { (make) -> Void in
             make.left.right.top.bottom.equalTo(self)
         }
     }
+    
+    
+    public func DispatchAfter(after: Double, handler:@escaping ()->())
+    {
+        DispatchQueue.main.asyncAfter(deadline: .now() + after) {
+            handler()
+        }
+    }
+
     
     open func setTableViewBounces(canBounces : Bool) {
         self.tableView.bounces = canBounces

@@ -5,5 +5,5 @@ target 'MHZWidget' do
   
   pod 'SnapKit'
   pod 'Alamofire', '~> 5.0.0-beta.5'
-  
+  pod 'MJRefresh'
 end

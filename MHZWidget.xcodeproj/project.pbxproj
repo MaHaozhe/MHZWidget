@@ -55,6 +55,7 @@
 		2309C90D22968A64002762FB /* CommonTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTabBarVC.swift; sourceTree = "<group>"; };
 		2309C90F22968DCC002762FB /* RootMyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootMyVC.swift; sourceTree = "<group>"; };
 		2334E65622B0E6EC00233C73 /* MHZTitleSubTitleLInkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZTitleSubTitleLInkViewModel.swift; sourceTree = "<group>"; };
+		23356FFC22BC787C00D4C454 /* SwiftOCBredge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftOCBredge.h; sourceTree = "<group>"; };
 		2343AA2A22A5063A00E056F5 /* MHZUpLowLowerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZUpLowLowerContentView.swift; sourceTree = "<group>"; };
 		2343AA2D22A5117E00E056F5 /* MHZTitleSubTitleLInkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZTitleSubTitleLInkView.swift; sourceTree = "<group>"; };
 		2343AA2F22A51CEC00E056F5 /* MHZTitleSubTitleLInkViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZTitleSubTitleLInkViewSection.swift; sourceTree = "<group>"; };
@@ -119,6 +120,7 @@
 				23084BC7224872FD00DE329D /* AppDelegate.swift */,
 				23084BC9224872FD00DE329D /* RootViewController.swift */,
 				2309C90F22968DCC002762FB /* RootMyVC.swift */,
+				23356FFC22BC787C00D4C454 /* SwiftOCBredge.h */,
 				23084BCE2248730000DE329D /* Assets.xcassets */,
 				23084BD02248730000DE329D /* LaunchScreen.storyboard */,
 				23084BD32248730000DE329D /* Info.plist */,
@@ -356,6 +358,7 @@
 				23084BC0224872FD00DE329D /* Sources */,
 				23084BC1224872FD00DE329D /* Frameworks */,
 				23084BC2224872FD00DE329D /* Resources */,
+				120E07FFF44DBDB24D49FC30 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -413,6 +416,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		120E07FFF44DBDB24D49FC30 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MHZWidget/Pods-MHZWidget-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MHZWidget/Pods-MHZWidget-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9FC049FE652BBBE21122B8F4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -545,6 +570,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = MHZWidget/SwiftOCBredge.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -599,6 +625,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = MHZWidget/SwiftOCBredge.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
