@@ -12,6 +12,7 @@ class MHZPhotoVC: CommonVC {
     
     var photoImg : UIImageView!
     var takePhotoBtn : UIButton!
+    var customPhotoBtn : UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +37,16 @@ class MHZPhotoVC: CommonVC {
         takePhotoBtn.addTarget(self, action: #selector(getPhotoAction), for: .touchUpInside)
         self.view.addSubview(takePhotoBtn)
         
+        customPhotoBtn = UIButton.init()
+        customPhotoBtn.setTitle("自定义相册", for: .normal)
+        customPhotoBtn.setTitleColor(.black, for: .normal)
+        customPhotoBtn.titleLabel?.font = UIFont.systemFont(ofSize: 14)
+        customPhotoBtn.layer.borderColor = UIColor.black.cgColor
+        customPhotoBtn.layer.borderWidth = 1
+        customPhotoBtn.layer.cornerRadius = 5
+        customPhotoBtn.addTarget(self, action: #selector(pushToCunstomPhotoVC), for: .touchUpInside)
+        self.view.addSubview(customPhotoBtn)
+        
         photoImg.snp.makeConstraints { (make) in
             make.top.equalToSuperview().offset(20)
             make.left.right.equalToSuperview()
@@ -46,8 +57,16 @@ class MHZPhotoVC: CommonVC {
             make.top.equalTo(photoImg.snp_bottomMargin).offset(10)
             make.width.equalTo(100)
             make.height.equalTo(44)
-            make.centerX.equalToSuperview()
+            make.centerX.equalTo(self.view).offset(-80)
         }
+        
+        customPhotoBtn.snp.makeConstraints { (make) in
+            make.top.equalTo(photoImg.snp_bottomMargin).offset(10)
+            make.width.equalTo(100)
+            make.height.equalTo(44)
+            make.centerX.equalTo(self.view).offset(80)
+        }
+        
     }
     
     
@@ -73,6 +92,11 @@ class MHZPhotoVC: CommonVC {
         picker.delegate = self
         picker.sourceType = sourceType
         present(picker,animated: true)
+    }
+    
+    
+    @objc func pushToCunstomPhotoVC() {
+        self.navigationController?.pushViewController(MHZPhotoGroupVC(), animated: true)
     }
     
 }

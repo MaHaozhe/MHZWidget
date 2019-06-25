@@ -18,6 +18,7 @@
 		2309C91022968DCC002762FB /* RootMyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309C90F22968DCC002762FB /* RootMyVC.swift */; };
 		2334E65722B0E6EC00233C73 /* MHZTitleSubTitleLInkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2334E65622B0E6EC00233C73 /* MHZTitleSubTitleLInkViewModel.swift */; };
 		2335700122BCC8E800D4C454 /* MHZPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2335700022BCC8E800D4C454 /* MHZPhotoVC.swift */; };
+		2340BCD522C1FC190088ACAC /* MHZPhotoGroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2340BCD422C1FC190088ACAC /* MHZPhotoGroupVC.swift */; };
 		2343AA2B22A5063A00E056F5 /* MHZUpLowLowerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2343AA2A22A5063A00E056F5 /* MHZUpLowLowerContentView.swift */; };
 		2343AA2E22A5117E00E056F5 /* MHZTitleSubTitleLInkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2343AA2D22A5117E00E056F5 /* MHZTitleSubTitleLInkView.swift */; };
 		2343AA3022A51CEC00E056F5 /* MHZTitleSubTitleLInkViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2343AA2F22A51CEC00E056F5 /* MHZTitleSubTitleLInkViewSection.swift */; };
@@ -58,6 +59,7 @@
 		2334E65622B0E6EC00233C73 /* MHZTitleSubTitleLInkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZTitleSubTitleLInkViewModel.swift; sourceTree = "<group>"; };
 		23356FFC22BC787C00D4C454 /* SwiftOCBredge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftOCBredge.h; sourceTree = "<group>"; };
 		2335700022BCC8E800D4C454 /* MHZPhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZPhotoVC.swift; sourceTree = "<group>"; };
+		2340BCD422C1FC190088ACAC /* MHZPhotoGroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZPhotoGroupVC.swift; sourceTree = "<group>"; };
 		2343AA2A22A5063A00E056F5 /* MHZUpLowLowerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZUpLowLowerContentView.swift; sourceTree = "<group>"; };
 		2343AA2D22A5117E00E056F5 /* MHZTitleSubTitleLInkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZTitleSubTitleLInkView.swift; sourceTree = "<group>"; };
 		2343AA2F22A51CEC00E056F5 /* MHZTitleSubTitleLInkViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZTitleSubTitleLInkViewSection.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 		23356FFD22BCC89D00D4C454 /* PhotoImage */ = {
 			isa = PBXGroup;
 			children = (
+				2340BCD322C1FBC30088ACAC /* MHZPhotoBrowse */,
 				23356FFE22BCC89D00D4C454 /* Controller */,
 				23356FFF22BCC89D00D4C454 /* View */,
 			);
@@ -197,6 +200,14 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		2340BCD322C1FBC30088ACAC /* MHZPhotoBrowse */ = {
+			isa = PBXGroup;
+			children = (
+				2340BCD422C1FC190088ACAC /* MHZPhotoGroupVC.swift */,
+			);
+			path = MHZPhotoBrowse;
 			sourceTree = "<group>";
 		};
 		2343AA2C22A5112800E056F5 /* MainSubTitleView */ = {
@@ -516,6 +527,7 @@
 				23084BC8224872FD00DE329D /* AppDelegate.swift in Sources */,
 				238BA91822B39BE500F727F1 /* SizeDataSource.swift in Sources */,
 				23BA67FE229FAA79009AEBA2 /* MHZLinkListVC.swift in Sources */,
+				2340BCD522C1FC190088ACAC /* MHZPhotoGroupVC.swift in Sources */,
 				238BA91222B3895800F727F1 /* ViewController+PickerViewDelegate.swift in Sources */,
 				23BA6802229FE372009AEBA2 /* MHZUpLowUpperCell.swift in Sources */,
 				236168FF22B78C5100594415 /* MarsHabitatPricer.mlmodel in Sources */,
