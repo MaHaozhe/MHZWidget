@@ -9,6 +9,7 @@
 import UIKit
 import CoreML
 
+@available(iOS 11.0, *)
 class MHZPickerViewVC: CommonVC {
     
     let model = MarsHabitatPricer()

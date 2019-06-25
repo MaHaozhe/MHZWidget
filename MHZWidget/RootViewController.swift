@@ -53,9 +53,15 @@ extension RootViewController : UITableViewDelegate{
         case 1:
             self.navigationController?.pushViewController(MHZLinkListVC(vcTitle: "Linked List"), animated: true)
         case 2:
-            self.navigationController?.pushViewController(MHZPickerViewVC(vcTitle: "PickerView"), animated: true)
+            if #available(iOS 11.0, *) {
+                self.navigationController?.pushViewController(MHZPickerViewVC(vcTitle: "PickerView"), animated: true)
+            } else {
+                // Fallback on earlier versions
+            }
         case 3:
             self.navigationController?.pushViewController(MHZNetworkDataVC(vcTitle: "NetworkData"), animated: true)
+        case 4:
+            self.navigationController?.pushViewController(MHZPhotoVC(vcTitle: "MHZPhotoVC"), animated: true)
         default:
             self.navigationController?.pushViewController(returnVC, animated: true)
         }
@@ -83,6 +89,8 @@ extension RootViewController : UITableViewDataSource{
             cell.textLabel?.text = "PickerView"
         case 3:
             cell.textLabel?.text = "NetworkData"
+        case 4:
+            cell.textLabel?.text = "MHZPhotoVC"
         default:
             cell.textLabel?.text = String.init(format: "commonCell %d", indexPath.row+1)
         }

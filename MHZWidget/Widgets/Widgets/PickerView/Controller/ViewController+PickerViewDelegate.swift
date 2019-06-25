@@ -8,6 +8,7 @@
 
 import UIKit
 
+@available(iOS 11.0, *)
 extension MHZPickerViewVC : UIPickerViewDelegate{
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
