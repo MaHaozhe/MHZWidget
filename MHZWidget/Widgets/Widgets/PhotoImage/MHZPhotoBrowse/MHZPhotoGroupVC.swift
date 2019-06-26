@@ -30,13 +30,37 @@ class MHZPhotoGroupVC: UITableViewController {
     var sectionTitles = ["","智能分组相册","相册"]
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "相册"
+        self.navigationItem.title = "相册分组"
         
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: CellIdentifier.allPhotos.rawValue)
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: CellIdentifier.collection.rawValue)
         
+        let allPhotosOptions = PHFetchOptions()
+        allPhotosOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: true)]
+        allPhotos = PHAsset.fetchAssets(with: allPhotosOptions)
+        
+        
         smartAlbums = PHAssetCollection.fetchAssetCollections(with: .smartAlbum, subtype: .albumRegular, options: nil)
         userCollections = PHCollectionList.fetchTopLevelUserCollections(with: nil)
+        
+        let gridVC = MHZPhotoGridVC()
+        gridVC.fetchResult = allPhotos
+        self.navigationController?.pushViewController(gridVC, animated: false)
+
+        self.setupDismissBtn()
+    }
+    
+    fileprivate func setupDismissBtn() {
+        let dismissBtn = UIButton.init()
+        dismissBtn.setTitle("取消", for: .normal)
+        dismissBtn.setTitleColor(UIColor.black, for: .normal)
+        dismissBtn.titleLabel?.font = UIFont.systemFont(ofSize: 15)
+        dismissBtn.addTarget(self, action: #selector(dismissAction), for: .touchUpInside)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(customView: dismissBtn)
+    }
+    
+    @objc fileprivate func dismissAction() {
+        self.dismiss(animated: true, completion: nil)
     }
     
     //MARK: tableview
@@ -78,6 +102,20 @@ class MHZPhotoGroupVC: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        switch Section(rawValue: indexPath.section)! {
+        case .allPhotos:
+            let gridVC = MHZPhotoGridVC()
+            gridVC.fetchResult = allPhotos
+            self.navigationController?.pushViewController(gridVC, animated: true)
+        case .smartAlbums:
+            let gridVC = MHZPhotoGridVC()
+            gridVC.fetchResult = allPhotos
+            self.navigationController?.pushViewController(gridVC, animated: true)
+        case .userCollections:
+            let gridVC = MHZPhotoGridVC()
+            gridVC.fetchResult = allPhotos
+            self.navigationController?.pushViewController(gridVC, animated: true)
+        }
     }
 
 }

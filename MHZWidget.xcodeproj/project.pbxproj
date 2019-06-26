@@ -19,6 +19,7 @@
 		2334E65722B0E6EC00233C73 /* MHZTitleSubTitleLInkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2334E65622B0E6EC00233C73 /* MHZTitleSubTitleLInkViewModel.swift */; };
 		2335700122BCC8E800D4C454 /* MHZPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2335700022BCC8E800D4C454 /* MHZPhotoVC.swift */; };
 		2340BCD522C1FC190088ACAC /* MHZPhotoGroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2340BCD422C1FC190088ACAC /* MHZPhotoGroupVC.swift */; };
+		2340BCD722C22CBC0088ACAC /* MHZPhotoGridVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2340BCD622C22CBC0088ACAC /* MHZPhotoGridVC.swift */; };
 		2343AA2B22A5063A00E056F5 /* MHZUpLowLowerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2343AA2A22A5063A00E056F5 /* MHZUpLowLowerContentView.swift */; };
 		2343AA2E22A5117E00E056F5 /* MHZTitleSubTitleLInkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2343AA2D22A5117E00E056F5 /* MHZTitleSubTitleLInkView.swift */; };
 		2343AA3022A51CEC00E056F5 /* MHZTitleSubTitleLInkViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2343AA2F22A51CEC00E056F5 /* MHZTitleSubTitleLInkViewSection.swift */; };
@@ -41,6 +42,8 @@
 		23FA3BBF22A0CA9B008C2BB8 /* MHZUpLowLowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA3BBE22A0CA9B008C2BB8 /* MHZUpLowLowerCell.swift */; };
 		23FA3BC222A0CE40008C2BB8 /* MHZViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA3BC122A0CE40008C2BB8 /* MHZViewExtensions.swift */; };
 		23FA3BC422A126C4008C2BB8 /* MHZUIDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA3BC322A126C4008C2BB8 /* MHZUIDefine.swift */; };
+		23FFDD8422C30EBC004A605E /* MHZPhotoGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FFDD8322C30EBC004A605E /* MHZPhotoGridCell.swift */; };
+		23FFDD8622C33FAB004A605E /* MHZPhotoEditorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FFDD8522C33FAB004A605E /* MHZPhotoEditorVC.swift */; };
 		C8ADB505BFD8AB3B8C124ECF /* libPods-MHZWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 694BCF1EC9BE0AC66BB8B8C0 /* libPods-MHZWidget.a */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +63,7 @@
 		23356FFC22BC787C00D4C454 /* SwiftOCBredge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftOCBredge.h; sourceTree = "<group>"; };
 		2335700022BCC8E800D4C454 /* MHZPhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZPhotoVC.swift; sourceTree = "<group>"; };
 		2340BCD422C1FC190088ACAC /* MHZPhotoGroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZPhotoGroupVC.swift; sourceTree = "<group>"; };
+		2340BCD622C22CBC0088ACAC /* MHZPhotoGridVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZPhotoGridVC.swift; sourceTree = "<group>"; };
 		2343AA2A22A5063A00E056F5 /* MHZUpLowLowerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZUpLowLowerContentView.swift; sourceTree = "<group>"; };
 		2343AA2D22A5117E00E056F5 /* MHZTitleSubTitleLInkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZTitleSubTitleLInkView.swift; sourceTree = "<group>"; };
 		2343AA2F22A51CEC00E056F5 /* MHZTitleSubTitleLInkViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZTitleSubTitleLInkViewSection.swift; sourceTree = "<group>"; };
@@ -82,6 +86,8 @@
 		23FA3BBE22A0CA9B008C2BB8 /* MHZUpLowLowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZUpLowLowerCell.swift; sourceTree = "<group>"; };
 		23FA3BC122A0CE40008C2BB8 /* MHZViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZViewExtensions.swift; sourceTree = "<group>"; };
 		23FA3BC322A126C4008C2BB8 /* MHZUIDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZUIDefine.swift; sourceTree = "<group>"; };
+		23FFDD8322C30EBC004A605E /* MHZPhotoGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZPhotoGridCell.swift; sourceTree = "<group>"; };
+		23FFDD8522C33FAB004A605E /* MHZPhotoEditorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZPhotoEditorVC.swift; sourceTree = "<group>"; };
 		694BCF1EC9BE0AC66BB8B8C0 /* libPods-MHZWidget.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MHZWidget.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93248C00F51A5B81A8C7B7AE /* Pods-MHZWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHZWidget.debug.xcconfig"; path = "Target Support Files/Pods-MHZWidget/Pods-MHZWidget.debug.xcconfig"; sourceTree = "<group>"; };
 		F8B6D3D95AA845E1D666AF79 /* Pods-MHZWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHZWidget.release.xcconfig"; path = "Target Support Files/Pods-MHZWidget/Pods-MHZWidget.release.xcconfig"; sourceTree = "<group>"; };
@@ -206,6 +212,9 @@
 			isa = PBXGroup;
 			children = (
 				2340BCD422C1FC190088ACAC /* MHZPhotoGroupVC.swift */,
+				2340BCD622C22CBC0088ACAC /* MHZPhotoGridVC.swift */,
+				23FFDD8322C30EBC004A605E /* MHZPhotoGridCell.swift */,
+				23FFDD8522C33FAB004A605E /* MHZPhotoEditorVC.swift */,
 			);
 			path = MHZPhotoBrowse;
 			sourceTree = "<group>";
@@ -512,6 +521,7 @@
 				23FA3BC422A126C4008C2BB8 /* MHZUIDefine.swift in Sources */,
 				23FA3BBF22A0CA9B008C2BB8 /* MHZUpLowLowerCell.swift in Sources */,
 				238BA91A22B3A28B00F727F1 /* Feature.swift in Sources */,
+				2340BCD722C22CBC0088ACAC /* MHZPhotoGridVC.swift in Sources */,
 				23EB63A6229E7C6000EE1BAA /* MHZTouchDetailVC.swift in Sources */,
 				2358082B22B8E95700C1D5DD /* MHZNetworkDataVC.swift in Sources */,
 				2343AA2B22A5063A00E056F5 /* MHZUpLowLowerContentView.swift in Sources */,
@@ -530,9 +540,11 @@
 				2340BCD522C1FC190088ACAC /* MHZPhotoGroupVC.swift in Sources */,
 				238BA91222B3895800F727F1 /* ViewController+PickerViewDelegate.swift in Sources */,
 				23BA6802229FE372009AEBA2 /* MHZUpLowUpperCell.swift in Sources */,
+				23FFDD8422C30EBC004A605E /* MHZPhotoGridCell.swift in Sources */,
 				236168FF22B78C5100594415 /* MarsHabitatPricer.mlmodel in Sources */,
 				238BA91022B388B000F727F1 /* MHZPickerViewDataSource.swift in Sources */,
 				238BA90D22B3818700F727F1 /* MHZPickerViewVC.swift in Sources */,
+				23FFDD8622C33FAB004A605E /* MHZPhotoEditorVC.swift in Sources */,
 				23EB63A2229E351200EE1BAA /* MHZTouchTBVC.swift in Sources */,
 				2309C90922967B82002762FB /* CommonTVCell.swift in Sources */,
 				2343AA2E22A5117E00E056F5 /* MHZTitleSubTitleLInkView.swift in Sources */,
@@ -679,7 +691,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 94KPU2F73G;
 				INFOPLIST_FILE = MHZWidget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -699,7 +711,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 94KPU2F73G;
 				INFOPLIST_FILE = MHZWidget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

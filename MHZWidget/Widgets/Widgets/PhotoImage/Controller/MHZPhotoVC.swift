@@ -96,7 +96,9 @@ class MHZPhotoVC: CommonVC {
     
     
     @objc func pushToCunstomPhotoVC() {
-        self.navigationController?.pushViewController(MHZPhotoGroupVC(), animated: true)
+//        self.navigationController?.pushViewController(MHZPhotoGroupVC(), animated: true)
+        let navVC = MHZNavigaitonC.init(rootViewController: MHZPhotoGroupVC.init(style: .plain))
+        present(navVC,animated: true)
     }
     
 }
