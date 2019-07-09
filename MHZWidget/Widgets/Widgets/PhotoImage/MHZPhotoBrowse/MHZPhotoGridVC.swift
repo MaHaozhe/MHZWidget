@@ -92,7 +92,7 @@ class MHZPhotoGridVC: UIViewController {
 
 
 extension MHZPhotoGridVC : UICollectionViewDelegate,UICollectionViewDataSource{
-     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return fetchResult.count
     }
     
@@ -112,6 +112,7 @@ extension MHZPhotoGridVC : UICollectionViewDelegate,UICollectionViewDataSource{
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        let editorVC = MHZPhotoEditorVC.init()
+        self.navigationController?.pushViewController(editorVC, animated: true)
     }
 }

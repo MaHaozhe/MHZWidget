@@ -10,6 +10,7 @@ import UIKit
 
 class MHZNavigaitonC: UINavigationController,UINavigationControllerDelegate {
     var popDelegate:UIGestureRecognizerDelegate?
+    var navigationBarImageView:UIView!
     
     override init(rootViewController: UIViewController) {
         super.init(rootViewController: rootViewController)
@@ -34,6 +35,8 @@ class MHZNavigaitonC: UINavigationController,UINavigationControllerDelegate {
         self.delegate = self
         
         
+        navigationBarImageView = self.navigationBar.subviews.first
+        print(navigationBarImageView as Any)
     }
     
     // UIGestureRecognizerDelegate代理

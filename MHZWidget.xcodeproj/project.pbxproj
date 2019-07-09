@@ -18,6 +18,8 @@
 		2309C91022968DCC002762FB /* RootMyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309C90F22968DCC002762FB /* RootMyVC.swift */; };
 		2334E65722B0E6EC00233C73 /* MHZTitleSubTitleLInkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2334E65622B0E6EC00233C73 /* MHZTitleSubTitleLInkViewModel.swift */; };
 		2335700122BCC8E800D4C454 /* MHZPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2335700022BCC8E800D4C454 /* MHZPhotoVC.swift */; };
+		2336E83622D2F07D000A67A3 /* MHZPhotoBrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2336E83522D2F07D000A67A3 /* MHZPhotoBrowseView.swift */; };
+		2336E83822D2F099000A67A3 /* MHZPhotoZoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2336E83722D2F099000A67A3 /* MHZPhotoZoomCell.swift */; };
 		2340BCD522C1FC190088ACAC /* MHZPhotoGroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2340BCD422C1FC190088ACAC /* MHZPhotoGroupVC.swift */; };
 		2340BCD722C22CBC0088ACAC /* MHZPhotoGridVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2340BCD622C22CBC0088ACAC /* MHZPhotoGridVC.swift */; };
 		2343AA2B22A5063A00E056F5 /* MHZUpLowLowerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2343AA2A22A5063A00E056F5 /* MHZUpLowLowerContentView.swift */; };
@@ -62,6 +64,8 @@
 		2334E65622B0E6EC00233C73 /* MHZTitleSubTitleLInkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZTitleSubTitleLInkViewModel.swift; sourceTree = "<group>"; };
 		23356FFC22BC787C00D4C454 /* SwiftOCBredge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftOCBredge.h; sourceTree = "<group>"; };
 		2335700022BCC8E800D4C454 /* MHZPhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZPhotoVC.swift; sourceTree = "<group>"; };
+		2336E83522D2F07D000A67A3 /* MHZPhotoBrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZPhotoBrowseView.swift; sourceTree = "<group>"; };
+		2336E83722D2F099000A67A3 /* MHZPhotoZoomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZPhotoZoomCell.swift; sourceTree = "<group>"; };
 		2340BCD422C1FC190088ACAC /* MHZPhotoGroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZPhotoGroupVC.swift; sourceTree = "<group>"; };
 		2340BCD622C22CBC0088ACAC /* MHZPhotoGridVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZPhotoGridVC.swift; sourceTree = "<group>"; };
 		2343AA2A22A5063A00E056F5 /* MHZUpLowLowerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZUpLowLowerContentView.swift; sourceTree = "<group>"; };
@@ -215,6 +219,8 @@
 				2340BCD622C22CBC0088ACAC /* MHZPhotoGridVC.swift */,
 				23FFDD8322C30EBC004A605E /* MHZPhotoGridCell.swift */,
 				23FFDD8522C33FAB004A605E /* MHZPhotoEditorVC.swift */,
+				2336E83522D2F07D000A67A3 /* MHZPhotoBrowseView.swift */,
+				2336E83722D2F099000A67A3 /* MHZPhotoZoomCell.swift */,
 			);
 			path = MHZPhotoBrowse;
 			sourceTree = "<group>";
@@ -528,11 +534,13 @@
 				23BA6800229FD26E009AEBA2 /* MHZUpLowLinkView.swift in Sources */,
 				238BA91422B3974600F727F1 /* SolarPanelDataSource.swift in Sources */,
 				2343AA3022A51CEC00E056F5 /* MHZTitleSubTitleLInkViewSection.swift in Sources */,
+				2336E83822D2F099000A67A3 /* MHZPhotoZoomCell.swift in Sources */,
 				2309C90A22967B82002762FB /* CommonVC.swift in Sources */,
 				23EB63A4229E36E000EE1BAA /* MHZTouchTBVCell.swift in Sources */,
 				238BA91622B3999300F727F1 /* GreenhousesDataSource.swift in Sources */,
 				2309C90E22968A64002762FB /* CommonTabBarVC.swift in Sources */,
 				2335700122BCC8E800D4C454 /* MHZPhotoVC.swift in Sources */,
+				2336E83622D2F07D000A67A3 /* MHZPhotoBrowseView.swift in Sources */,
 				2334E65722B0E6EC00233C73 /* MHZTitleSubTitleLInkViewModel.swift in Sources */,
 				23084BC8224872FD00DE329D /* AppDelegate.swift in Sources */,
 				238BA91822B39BE500F727F1 /* SizeDataSource.swift in Sources */,
