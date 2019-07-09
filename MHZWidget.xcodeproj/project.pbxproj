@@ -27,6 +27,12 @@
 		2343AA3022A51CEC00E056F5 /* MHZTitleSubTitleLInkViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2343AA2F22A51CEC00E056F5 /* MHZTitleSubTitleLInkViewSection.swift */; };
 		2351131B22A7BE3200D360D9 /* TitSubTitleDataList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2351131A22A7BE3200D360D9 /* TitSubTitleDataList.plist */; };
 		2358082B22B8E95700C1D5DD /* MHZNetworkDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2358082A22B8E95700C1D5DD /* MHZNetworkDataVC.swift */; };
+		235CBCE522D49D60002AA449 /* RainbowNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235CBCDF22D49D60002AA449 /* RainbowNavigation.swift */; };
+		235CBCE622D49D60002AA449 /* RainbowColorSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235CBCE022D49D60002AA449 /* RainbowColorSource.swift */; };
+		235CBCE722D49D60002AA449 /* UINavigationBar+Rainbow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235CBCE122D49D60002AA449 /* UINavigationBar+Rainbow.swift */; };
+		235CBCE822D49D60002AA449 /* RainbowPushAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235CBCE222D49D60002AA449 /* RainbowPushAnimator.swift */; };
+		235CBCE922D49D60002AA449 /* RainbowPopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235CBCE322D49D60002AA449 /* RainbowPopAnimator.swift */; };
+		235CBCEA22D49D60002AA449 /* RainbowDragPop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235CBCE422D49D60002AA449 /* RainbowDragPop.swift */; };
 		236168FF22B78C5100594415 /* MarsHabitatPricer.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 236168FE22B78C5100594415 /* MarsHabitatPricer.mlmodel */; };
 		238BA90D22B3818700F727F1 /* MHZPickerViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238BA90C22B3818700F727F1 /* MHZPickerViewVC.swift */; };
 		238BA91022B388B000F727F1 /* MHZPickerViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238BA90F22B388B000F727F1 /* MHZPickerViewDataSource.swift */; };
@@ -73,6 +79,12 @@
 		2343AA2F22A51CEC00E056F5 /* MHZTitleSubTitleLInkViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZTitleSubTitleLInkViewSection.swift; sourceTree = "<group>"; };
 		2351131A22A7BE3200D360D9 /* TitSubTitleDataList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TitSubTitleDataList.plist; sourceTree = "<group>"; };
 		2358082A22B8E95700C1D5DD /* MHZNetworkDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZNetworkDataVC.swift; sourceTree = "<group>"; };
+		235CBCDF22D49D60002AA449 /* RainbowNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RainbowNavigation.swift; sourceTree = "<group>"; };
+		235CBCE022D49D60002AA449 /* RainbowColorSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RainbowColorSource.swift; sourceTree = "<group>"; };
+		235CBCE122D49D60002AA449 /* UINavigationBar+Rainbow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Rainbow.swift"; sourceTree = "<group>"; };
+		235CBCE222D49D60002AA449 /* RainbowPushAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RainbowPushAnimator.swift; sourceTree = "<group>"; };
+		235CBCE322D49D60002AA449 /* RainbowPopAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RainbowPopAnimator.swift; sourceTree = "<group>"; };
+		235CBCE422D49D60002AA449 /* RainbowDragPop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RainbowDragPop.swift; sourceTree = "<group>"; };
 		236168FE22B78C5100594415 /* MarsHabitatPricer.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MarsHabitatPricer.mlmodel; sourceTree = "<group>"; };
 		238BA90C22B3818700F727F1 /* MHZPickerViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZPickerViewVC.swift; sourceTree = "<group>"; };
 		238BA90F22B388B000F727F1 /* MHZPickerViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZPickerViewDataSource.swift; sourceTree = "<group>"; };
@@ -260,6 +272,19 @@
 			path = NetConfiger;
 			sourceTree = "<group>";
 		};
+		235CBCDE22D49D60002AA449 /* RainbowNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				235CBCDF22D49D60002AA449 /* RainbowNavigation.swift */,
+				235CBCE022D49D60002AA449 /* RainbowColorSource.swift */,
+				235CBCE122D49D60002AA449 /* UINavigationBar+Rainbow.swift */,
+				235CBCE222D49D60002AA449 /* RainbowPushAnimator.swift */,
+				235CBCE322D49D60002AA449 /* RainbowPopAnimator.swift */,
+				235CBCE422D49D60002AA449 /* RainbowDragPop.swift */,
+			);
+			path = RainbowNavigation;
+			sourceTree = "<group>";
+		};
 		236168FD22B78C2200594415 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,6 +306,7 @@
 		238BA90A22B3813400F727F1 /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
+				235CBCDE22D49D60002AA449 /* RainbowNavigation */,
 				23356FFD22BCC89D00D4C454 /* PhotoImage */,
 				2358082822B8D86800C1D5DD /* NetworkData */,
 				238BA90922B3811600F727F1 /* PickerView */,
@@ -533,12 +559,15 @@
 				2343AA2B22A5063A00E056F5 /* MHZUpLowLowerContentView.swift in Sources */,
 				23BA6800229FD26E009AEBA2 /* MHZUpLowLinkView.swift in Sources */,
 				238BA91422B3974600F727F1 /* SolarPanelDataSource.swift in Sources */,
+				235CBCE722D49D60002AA449 /* UINavigationBar+Rainbow.swift in Sources */,
 				2343AA3022A51CEC00E056F5 /* MHZTitleSubTitleLInkViewSection.swift in Sources */,
 				2336E83822D2F099000A67A3 /* MHZPhotoZoomCell.swift in Sources */,
 				2309C90A22967B82002762FB /* CommonVC.swift in Sources */,
+				235CBCE822D49D60002AA449 /* RainbowPushAnimator.swift in Sources */,
 				23EB63A4229E36E000EE1BAA /* MHZTouchTBVCell.swift in Sources */,
 				238BA91622B3999300F727F1 /* GreenhousesDataSource.swift in Sources */,
 				2309C90E22968A64002762FB /* CommonTabBarVC.swift in Sources */,
+				235CBCE622D49D60002AA449 /* RainbowColorSource.swift in Sources */,
 				2335700122BCC8E800D4C454 /* MHZPhotoVC.swift in Sources */,
 				2336E83622D2F07D000A67A3 /* MHZPhotoBrowseView.swift in Sources */,
 				2334E65722B0E6EC00233C73 /* MHZTitleSubTitleLInkViewModel.swift in Sources */,
@@ -547,11 +576,14 @@
 				23BA67FE229FAA79009AEBA2 /* MHZLinkListVC.swift in Sources */,
 				2340BCD522C1FC190088ACAC /* MHZPhotoGroupVC.swift in Sources */,
 				238BA91222B3895800F727F1 /* ViewController+PickerViewDelegate.swift in Sources */,
+				235CBCE522D49D60002AA449 /* RainbowNavigation.swift in Sources */,
 				23BA6802229FE372009AEBA2 /* MHZUpLowUpperCell.swift in Sources */,
+				235CBCEA22D49D60002AA449 /* RainbowDragPop.swift in Sources */,
 				23FFDD8422C30EBC004A605E /* MHZPhotoGridCell.swift in Sources */,
 				236168FF22B78C5100594415 /* MarsHabitatPricer.mlmodel in Sources */,
 				238BA91022B388B000F727F1 /* MHZPickerViewDataSource.swift in Sources */,
 				238BA90D22B3818700F727F1 /* MHZPickerViewVC.swift in Sources */,
+				235CBCE922D49D60002AA449 /* RainbowPopAnimator.swift in Sources */,
 				23FFDD8622C33FAB004A605E /* MHZPhotoEditorVC.swift in Sources */,
 				23EB63A2229E351200EE1BAA /* MHZTouchTBVC.swift in Sources */,
 				2309C90922967B82002762FB /* CommonTVCell.swift in Sources */,
