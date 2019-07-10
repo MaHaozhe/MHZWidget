@@ -42,14 +42,16 @@ class MHZPhotoBrowseView: UIView,UICollectionViewDelegate,UICollectionViewDataSo
         itemsView.delegate = self
         itemsView.dataSource = self
         itemsView.register(MHZPhotoZoomCell.self, forCellWithReuseIdentifier: "MHZPhotoZoomCellID")
-        itemsView.backgroundColor = UIColor.white
+        itemsView.backgroundColor = UIColor.red
         itemsView.isPagingEnabled = true
         itemsView.bounces = false
+        itemsView.contentInsetAdjustmentBehavior = .never
         self.addSubview(itemsView)
         
         itemsView.snp.makeConstraints { (make) in
             make.edges.equalToSuperview()
         }
+        
     }
     
     

@@ -10,7 +10,7 @@ import UIKit
 import Photos
 import PhotosUI
 
-class MHZPhotoGridVC: UIViewController {
+class MHZPhotoGridVC: UIViewController,RainbowColorSource {
     
     var collectionView: UICollectionView!
     
@@ -54,6 +54,8 @@ class MHZPhotoGridVC: UIViewController {
         let scale = UIScreen.main.scale
         let cellSize = collectionViewFlowlayout.itemSize
         thumbnailSize = CGSize(width: cellSize.width*scale, height: cellSize.height*scale)
+        
+        self.navigationController?.navigationBar.rb.clear()
     }
     
     func setupSubViews() {

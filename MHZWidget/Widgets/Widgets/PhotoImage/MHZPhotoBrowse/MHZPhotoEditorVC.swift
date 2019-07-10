@@ -8,26 +8,25 @@
 
 import UIKit
 
-class MHZPhotoEditorVC: UIViewController {
+class MHZPhotoEditorVC: UIViewController,RainbowColorSource,UIGestureRecognizerDelegate {
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.setupSubviews()
     }
     
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        self.navigationController?.navigationBar.backgroundColor = UIColor.black.withAlphaComponent(0.5)
+        self.navigationController?.navigationBar.rb.backgroundColor = UIColor.clear
     }
     
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-//        self.navigationController?.navigationBar.backgroundColor = UIColor.white.withAlphaComponent(1)
-        
+        self.navigationController?.navigationBar.rb.backgroundColor = UIColor.white
+        self.navigationController?.navigationBar.rb.clear()
     }
     
     func setupSubviews() {
@@ -38,5 +37,15 @@ class MHZPhotoEditorVC: UIViewController {
             make.edges.equalToSuperview()
         }
     }
+    
+    //MARK: - RainbowColorSource
+    func navigationBarInColor() -> UIColor {
+        return UIColor.clear
+    }
+    
+    func navigationBarOutColor() -> UIColor {
+        return UIColor.white
+    }
+    
 }
 

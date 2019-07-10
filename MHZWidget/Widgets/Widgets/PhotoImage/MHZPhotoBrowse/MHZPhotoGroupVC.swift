@@ -9,7 +9,7 @@
 import UIKit
 import Photos
 
-class MHZPhotoGroupVC: UITableViewController {
+class MHZPhotoGroupVC: UITableViewController,RainbowColorSource {
     
     enum Section: Int {
         case allPhotos = 0
@@ -49,6 +49,13 @@ class MHZPhotoGroupVC: UITableViewController {
 
         self.setupDismissBtn()
     }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.rb.clear()
+    }
+    
     
     fileprivate func setupDismissBtn() {
         let dismissBtn = UIButton.init()
@@ -117,5 +124,4 @@ class MHZPhotoGroupVC: UITableViewController {
             self.navigationController?.pushViewController(gridVC, animated: true)
         }
     }
-
 }
