@@ -42,7 +42,7 @@ class MHZPhotoBrowseView: UIView,UICollectionViewDelegate,UICollectionViewDataSo
         itemsView.delegate = self
         itemsView.dataSource = self
         itemsView.register(MHZPhotoZoomCell.self, forCellWithReuseIdentifier: "MHZPhotoZoomCellID")
-        itemsView.backgroundColor = UIColor.red
+        itemsView.backgroundColor = UIColor.white
         itemsView.isPagingEnabled = true
         itemsView.bounces = false
         itemsView.contentInsetAdjustmentBehavior = .never
@@ -61,7 +61,8 @@ class MHZPhotoBrowseView: UIView,UICollectionViewDelegate,UICollectionViewDataSo
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MHZPhotoZoomCellID", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MHZPhotoZoomCellID", for: indexPath) as! MHZPhotoZoomCell
+        cell.zoomImgView.image = self.dataArr[indexPath.row] as? UIImage
         return cell
     }
 }

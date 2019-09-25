@@ -36,7 +36,6 @@ class MHZNavigaitonC: UINavigationController,UINavigationControllerDelegate {
         
         
         navigationBarImageView = self.navigationBar.subviews.first
-        print(navigationBarImageView as Any)
     }
     
     // UIGestureRecognizerDelegate代理

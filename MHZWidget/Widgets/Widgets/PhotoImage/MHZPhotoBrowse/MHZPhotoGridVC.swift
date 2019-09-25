@@ -16,17 +16,19 @@ class MHZPhotoGridVC: UIViewController,RainbowColorSource {
     
     var fetchResult: PHFetchResult<PHAsset>!
     var availableWidth: CGFloat = 0
+    var imageDataArr: NSMutableArray!
     
     var collectionViewFlowlayout:UICollectionViewFlowLayout!
     
     fileprivate let imageManager = PHCachingImageManager()
     fileprivate var thumbnailSize: CGSize!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationItem.title = "相册"
+        
+        self.imageDataArr = NSMutableArray.init()
         
         self.setupSubViews()
         
@@ -88,8 +90,6 @@ class MHZPhotoGridVC: UIViewController,RainbowColorSource {
         }
     }
     
-    
-    
 }
 
 
@@ -114,7 +114,42 @@ extension MHZPhotoGridVC : UICollectionViewDelegate,UICollectionViewDataSource{
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        
+        for index in 0..<fetchResult.count{
+            let asset = fetchResult.object(at: index)
+//            imageManager.requestImage(for: asset, targetSize: PHImageManagerMaximumSize, contentMode: .default, options: nil, resultHandler: {image, _ in
+//
+//                self.imageDataArr.add(image!)
+//            })
+//            PHImageManager.default().requestImage(for: asset, targetSize: PHImageManagerMaximumSize, contentMode: .default, options: nil) { (image, _: [AnyHashable : Any]?) in
+//                self.imageDataArr.add(image!)
+//            }
+            let options = PHImageRequestOptions()
+            options.deliveryMode = .highQualityFormat
+            options.isNetworkAccessAllowed = true
+            options.progressHandler = { progress, _, _, _ in
+                // The handler may originate on a background queue, so
+                // re-dispatch to the main queue for UI work.
+//                DispatchQueue.main.sync {
+//                    self.progressView.progress = Float(progress)
+//                }
+            }
+            
+            PHImageManager.default().requestImage(for: asset, targetSize: targetSize, contentMode: .aspectFit, options: options,
+                                                  resultHandler: { image, _ in
+                                                    self.imageDataArr.add(image!)
+                                                    
+            })
+        }
         let editorVC = MHZPhotoEditorVC.init()
+        editorVC.imageData = imageDataArr
         self.navigationController?.pushViewController(editorVC, animated: true)
     }
+}
+
+
+var targetSize: CGSize {
+    let scale = UIScreen.main.scale
+    return CGSize(width: UIScreen.main.bounds.width * scale, height: UIScreen.main.bounds.height * scale)
 }

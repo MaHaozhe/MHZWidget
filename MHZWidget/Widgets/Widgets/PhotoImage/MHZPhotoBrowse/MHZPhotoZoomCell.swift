@@ -24,7 +24,15 @@ class MHZPhotoZoomCell: UICollectionViewCell {
     
     
     func setupSubViews() {
-        self.backgroundColor = UIColor.init(red: CGFloat((Float(arc4random()%255))/255.0), green: CGFloat((Float(arc4random()%255))/255.0), blue: CGFloat((Float(arc4random()%255))/255.0), alpha: 1.0)
+        zoomImgView = UIImageView.init()
+        zoomImgView.contentMode = .scaleAspectFit
+        self.addSubview(zoomImgView)
+        
+        zoomImgView.snp.makeConstraints { (make) in
+            make.edges.equalToSuperview()
+        }
     }
-
+    
+    
+    
 }

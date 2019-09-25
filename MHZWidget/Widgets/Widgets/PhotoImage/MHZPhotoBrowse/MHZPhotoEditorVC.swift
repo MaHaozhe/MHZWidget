@@ -7,13 +7,20 @@
 //
 
 import UIKit
+import PhotosUI
 
 class MHZPhotoEditorVC: UIViewController,RainbowColorSource,UIGestureRecognizerDelegate {
     
     
+    var imageData:NSMutableArray!{
+        didSet{
+            self.setupSubviews()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupSubviews()
+//        self.setupSubviews()
     }
     
     
@@ -30,7 +37,7 @@ class MHZPhotoEditorVC: UIViewController,RainbowColorSource,UIGestureRecognizerD
     }
     
     func setupSubviews() {
-        let itemArr = NSArray.init(array: [1,2,3,4])
+        let itemArr = NSArray.init(array: self.imageData)
         let browseView = MHZPhotoBrowseView.init(itmes: itemArr)
         self.view.addSubview(browseView)
         browseView.snp.makeConstraints { (make) in
