@@ -1,24 +1,70 @@
 PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
   - Alamofire (5.0.0-beta.6)
+  - Masonry (1.1.0)
   - MJRefresh (3.2.0)
+  - MMLayout (0.2.0)
+  - pop (1.0.12)
+  - SDWebImage (4.4.7):
+    - SDWebImage/Core (= 4.4.7)
+  - SDWebImage/Core (4.4.7)
   - SnapKit (5.0.0)
+  - SuperPlayer (3.0.2):
+    - AFNetworking (~> 3.1)
+    - Masonry (~> 1.1.0)
+    - MMLayout
+    - SDWebImage (~> 4.4.0)
+    - SuperPlayer/Player (= 3.0.2)
+  - SuperPlayer/Player (3.0.2):
+    - AFNetworking (~> 3.1)
+    - Masonry (~> 1.1.0)
+    - MMLayout
+    - SDWebImage (~> 4.4.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.0.0-beta.5)
   - MJRefresh
+  - pop
   - SnapKit
+  - SuperPlayer
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
     - Alamofire
+    - Masonry
     - MJRefresh
+    - MMLayout
+    - pop
+    - SDWebImage
     - SnapKit
+    - SuperPlayer
 
 SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Alamofire: cd08a4402bd12cacd0c66f23fb12fec8d6b965e4
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
+  MMLayout: 3fb59d58eeb8656c64e61d550fb0088e10666c11
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  SDWebImage: c10d14a8883ebd89664f02a422006f66a85c0c5d
   SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
+  SuperPlayer: cd2ecad5d265871f2d1de0c467c33cb5bcea4368
 
-PODFILE CHECKSUM: e62e9e2d9fc8d83f99f493791117983969a8c8af
+PODFILE CHECKSUM: b2a534764de303f1927fe815cbf5433dfee433c2
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.8.3

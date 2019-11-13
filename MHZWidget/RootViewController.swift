@@ -62,6 +62,10 @@ extension RootViewController : UITableViewDelegate{
             self.navigationController?.pushViewController(MHZNetworkDataVC(vcTitle: "NetworkData"), animated: true)
         case 4:
             self.navigationController?.pushViewController(MHZPhotoVC(vcTitle: "MHZPhotoVC"), animated: true)
+        case 5:
+            self.navigationController?.pushViewController(MHZPlayerVC(vcTitle: "Player"), animated: true)
+        case 6:
+            self.navigationController?.pushViewController(MHZPopAnimationVC(vcTitle: "Animation"), animated: true)
         default:
             self.navigationController?.pushViewController(returnVC, animated: true)
         }
@@ -91,6 +95,10 @@ extension RootViewController : UITableViewDataSource{
             cell.textLabel?.text = "NetworkData"
         case 4:
             cell.textLabel?.text = "MHZPhotoVC"
+        case 5:
+            cell.textLabel?.text = "MHZPlayer"
+        case 6:
+            cell.textLabel?.text = "MHZAnimation"
         default:
             cell.textLabel?.text = String.init(format: "commonCell %d", indexPath.row+1)
         }

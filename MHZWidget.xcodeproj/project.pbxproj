@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,7 @@
 		2335700122BCC8E800D4C454 /* MHZPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2335700022BCC8E800D4C454 /* MHZPhotoVC.swift */; };
 		2336E83622D2F07D000A67A3 /* MHZPhotoBrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2336E83522D2F07D000A67A3 /* MHZPhotoBrowseView.swift */; };
 		2336E83822D2F099000A67A3 /* MHZPhotoZoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2336E83722D2F099000A67A3 /* MHZPhotoZoomCell.swift */; };
+		233A5C01233B56FA00A6DA54 /* MHZPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A5C00233B56FA00A6DA54 /* MHZPlayerVC.swift */; };
 		2340BCD522C1FC190088ACAC /* MHZPhotoGroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2340BCD422C1FC190088ACAC /* MHZPhotoGroupVC.swift */; };
 		2340BCD722C22CBC0088ACAC /* MHZPhotoGridVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2340BCD622C22CBC0088ACAC /* MHZPhotoGridVC.swift */; };
 		2343AA2B22A5063A00E056F5 /* MHZUpLowLowerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2343AA2A22A5063A00E056F5 /* MHZUpLowLowerContentView.swift */; };
@@ -44,6 +45,7 @@
 		23BA67FE229FAA79009AEBA2 /* MHZLinkListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BA67FD229FAA79009AEBA2 /* MHZLinkListVC.swift */; };
 		23BA6800229FD26E009AEBA2 /* MHZUpLowLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BA67FF229FD26E009AEBA2 /* MHZUpLowLinkView.swift */; };
 		23BA6802229FE372009AEBA2 /* MHZUpLowUpperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BA6801229FE372009AEBA2 /* MHZUpLowUpperCell.swift */; };
+		23C47760237A8886006AE0B0 /* MHZPopAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C4775F237A8886006AE0B0 /* MHZPopAnimationVC.swift */; };
 		23EB63A2229E351200EE1BAA /* MHZTouchTBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EB63A1229E351200EE1BAA /* MHZTouchTBVC.swift */; };
 		23EB63A4229E36E000EE1BAA /* MHZTouchTBVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EB63A3229E36E000EE1BAA /* MHZTouchTBVCell.swift */; };
 		23EB63A6229E7C6000EE1BAA /* MHZTouchDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EB63A5229E7C6000EE1BAA /* MHZTouchDetailVC.swift */; };
@@ -72,6 +74,7 @@
 		2335700022BCC8E800D4C454 /* MHZPhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZPhotoVC.swift; sourceTree = "<group>"; };
 		2336E83522D2F07D000A67A3 /* MHZPhotoBrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZPhotoBrowseView.swift; sourceTree = "<group>"; };
 		2336E83722D2F099000A67A3 /* MHZPhotoZoomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZPhotoZoomCell.swift; sourceTree = "<group>"; };
+		233A5C00233B56FA00A6DA54 /* MHZPlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZPlayerVC.swift; sourceTree = "<group>"; };
 		2340BCD422C1FC190088ACAC /* MHZPhotoGroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZPhotoGroupVC.swift; sourceTree = "<group>"; };
 		2340BCD622C22CBC0088ACAC /* MHZPhotoGridVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZPhotoGridVC.swift; sourceTree = "<group>"; };
 		2343AA2A22A5063A00E056F5 /* MHZUpLowLowerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZUpLowLowerContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +99,7 @@
 		23BA67FD229FAA79009AEBA2 /* MHZLinkListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZLinkListVC.swift; sourceTree = "<group>"; };
 		23BA67FF229FD26E009AEBA2 /* MHZUpLowLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZUpLowLinkView.swift; sourceTree = "<group>"; };
 		23BA6801229FE372009AEBA2 /* MHZUpLowUpperCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZUpLowUpperCell.swift; sourceTree = "<group>"; };
+		23C4775F237A8886006AE0B0 /* MHZPopAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZPopAnimationVC.swift; sourceTree = "<group>"; };
 		23EB63A1229E351200EE1BAA /* MHZTouchTBVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZTouchTBVC.swift; sourceTree = "<group>"; };
 		23EB63A3229E36E000EE1BAA /* MHZTouchTBVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZTouchTBVCell.swift; sourceTree = "<group>"; };
 		23EB63A5229E7C6000EE1BAA /* MHZTouchDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZTouchDetailVC.swift; sourceTree = "<group>"; };
@@ -224,6 +228,30 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		233A5BFD233B566300A6DA54 /* TXPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				233A5BFF233B56B200A6DA54 /* Controller */,
+				233A5BFE233B56B200A6DA54 /* View */,
+			);
+			path = TXPlayer;
+			sourceTree = "<group>";
+		};
+		233A5BFE233B56B200A6DA54 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		233A5BFF233B56B200A6DA54 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				233A5C00233B56FA00A6DA54 /* MHZPlayerVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		2340BCD322C1FBC30088ACAC /* MHZPhotoBrowse */ = {
 			isa = PBXGroup;
 			children = (
@@ -306,12 +334,14 @@
 		238BA90A22B3813400F727F1 /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
+				23C4775C237A8816006AE0B0 /* PopAnimation */,
 				235CBCDE22D49D60002AA449 /* RainbowNavigation */,
 				23356FFD22BCC89D00D4C454 /* PhotoImage */,
 				2358082822B8D86800C1D5DD /* NetworkData */,
 				238BA90922B3811600F727F1 /* PickerView */,
 				23BA67FA229FAA3A009AEBA2 /* LinkedList */,
 				23EB639D229E34B400EE1BAA /* 3DTouchTBV */,
+				233A5BFD233B566300A6DA54 /* TXPlayer */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -364,6 +394,30 @@
 				2343AA2A22A5063A00E056F5 /* MHZUpLowLowerContentView.swift */,
 			);
 			path = UpLowView;
+			sourceTree = "<group>";
+		};
+		23C4775C237A8816006AE0B0 /* PopAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				23C4775E237A883E006AE0B0 /* View */,
+				23C4775D237A882D006AE0B0 /* Controller */,
+			);
+			path = PopAnimation;
+			sourceTree = "<group>";
+		};
+		23C4775D237A882D006AE0B0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				23C4775F237A8886006AE0B0 /* MHZPopAnimationVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		23C4775E237A883E006AE0B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		23EB639D229E34B400EE1BAA /* 3DTouchTBV */ = {
@@ -501,16 +555,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MHZWidget/Pods-MHZWidget-resources.sh",
-				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-MHZWidget/Pods-MHZWidget-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-MHZWidget/Pods-MHZWidget-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -558,6 +607,7 @@
 				2358082B22B8E95700C1D5DD /* MHZNetworkDataVC.swift in Sources */,
 				2343AA2B22A5063A00E056F5 /* MHZUpLowLowerContentView.swift in Sources */,
 				23BA6800229FD26E009AEBA2 /* MHZUpLowLinkView.swift in Sources */,
+				233A5C01233B56FA00A6DA54 /* MHZPlayerVC.swift in Sources */,
 				238BA91422B3974600F727F1 /* SolarPanelDataSource.swift in Sources */,
 				235CBCE722D49D60002AA449 /* UINavigationBar+Rainbow.swift in Sources */,
 				2343AA3022A51CEC00E056F5 /* MHZTitleSubTitleLInkViewSection.swift in Sources */,
@@ -574,6 +624,7 @@
 				23084BC8224872FD00DE329D /* AppDelegate.swift in Sources */,
 				238BA91822B39BE500F727F1 /* SizeDataSource.swift in Sources */,
 				23BA67FE229FAA79009AEBA2 /* MHZLinkListVC.swift in Sources */,
+				23C47760237A8886006AE0B0 /* MHZPopAnimationVC.swift in Sources */,
 				2340BCD522C1FC190088ACAC /* MHZPhotoGroupVC.swift in Sources */,
 				238BA91222B3895800F727F1 /* ViewController+PickerViewDelegate.swift in Sources */,
 				235CBCE522D49D60002AA449 /* RainbowNavigation.swift in Sources */,
