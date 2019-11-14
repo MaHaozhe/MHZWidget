@@ -18,7 +18,7 @@ class MHZPopAnimationVC: CommonVC {
         let getRectNavAndStatusHight = ((self.navigationController?.navigationBar.height ?? 0) + UIApplication.shared.statusBarFrame.height)
         
         tableView = UITableView.init(frame: CGRect.init(x: 0, y: 0, width: self.view.width, height: self.view.height - getRectNavAndStatusHight))
-        tableView.register(CommonTVCell.self, forCellReuseIdentifier: "MHZPopAnimationVCCell")
+        tableView.register(MHZAnimationCell.self, forCellReuseIdentifier: "MHZAnimationCell")
         tableView.delegate = self
         tableView.dataSource = self
         self.view.addSubview(tableView)
@@ -29,7 +29,8 @@ class MHZPopAnimationVC: CommonVC {
 
 extension MHZPopAnimationVC : UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
+//        let cell = tableView.cellForRow(at: indexPath)!;
+        
     }
 }
 
@@ -44,11 +45,19 @@ extension MHZPopAnimationVC : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MHZPopAnimationVCCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MHZAnimationCell", for: indexPath)
+        cell.selectionStyle = .none
         
         switch indexPath.row {
         default:
-            cell.textLabel?.text = String.init(format: "commonCell %d", indexPath.row+1)
+            cell.textLabel?.text = String.init(format: "AnimationCell %d", indexPath.row+1)
+        }
+        
+        if let anim = POPBasicAnimation(propertyNamed: kPOPViewAlpha) {
+            anim.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+            anim.fromValue = 0.0
+            anim.toValue = 1.0
+            cell.pop_add(anim, forKey: "fade")
         }
         
         return cell

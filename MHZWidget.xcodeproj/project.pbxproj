@@ -35,6 +35,7 @@
 		235CBCE922D49D60002AA449 /* RainbowPopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235CBCE322D49D60002AA449 /* RainbowPopAnimator.swift */; };
 		235CBCEA22D49D60002AA449 /* RainbowDragPop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235CBCE422D49D60002AA449 /* RainbowDragPop.swift */; };
 		236168FF22B78C5100594415 /* MarsHabitatPricer.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 236168FE22B78C5100594415 /* MarsHabitatPricer.mlmodel */; };
+		23793E99237B9EAC00005B78 /* MHZAnimationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23793E98237B9EAC00005B78 /* MHZAnimationCell.swift */; };
 		238BA90D22B3818700F727F1 /* MHZPickerViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238BA90C22B3818700F727F1 /* MHZPickerViewVC.swift */; };
 		238BA91022B388B000F727F1 /* MHZPickerViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238BA90F22B388B000F727F1 /* MHZPickerViewDataSource.swift */; };
 		238BA91222B3895800F727F1 /* ViewController+PickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238BA91122B3895800F727F1 /* ViewController+PickerViewDelegate.swift */; };
@@ -89,6 +90,7 @@
 		235CBCE322D49D60002AA449 /* RainbowPopAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RainbowPopAnimator.swift; sourceTree = "<group>"; };
 		235CBCE422D49D60002AA449 /* RainbowDragPop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RainbowDragPop.swift; sourceTree = "<group>"; };
 		236168FE22B78C5100594415 /* MarsHabitatPricer.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MarsHabitatPricer.mlmodel; sourceTree = "<group>"; };
+		23793E98237B9EAC00005B78 /* MHZAnimationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZAnimationCell.swift; sourceTree = "<group>"; };
 		238BA90C22B3818700F727F1 /* MHZPickerViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZPickerViewVC.swift; sourceTree = "<group>"; };
 		238BA90F22B388B000F727F1 /* MHZPickerViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHZPickerViewDataSource.swift; sourceTree = "<group>"; };
 		238BA91122B3895800F727F1 /* ViewController+PickerViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+PickerViewDelegate.swift"; sourceTree = "<group>"; };
@@ -416,6 +418,7 @@
 		23C4775E237A883E006AE0B0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				23793E98237B9EAC00005B78 /* MHZAnimationCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -610,6 +613,7 @@
 				233A5C01233B56FA00A6DA54 /* MHZPlayerVC.swift in Sources */,
 				238BA91422B3974600F727F1 /* SolarPanelDataSource.swift in Sources */,
 				235CBCE722D49D60002AA449 /* UINavigationBar+Rainbow.swift in Sources */,
+				23793E99237B9EAC00005B78 /* MHZAnimationCell.swift in Sources */,
 				2343AA3022A51CEC00E056F5 /* MHZTitleSubTitleLInkViewSection.swift in Sources */,
 				2336E83822D2F099000A67A3 /* MHZPhotoZoomCell.swift in Sources */,
 				2309C90A22967B82002762FB /* CommonVC.swift in Sources */,
